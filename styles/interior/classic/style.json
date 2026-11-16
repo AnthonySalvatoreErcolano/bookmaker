@@ -1,0 +1,12 @@
+{
+  "title": "Classic",
+  "description": "A traditional book page: Palatino-style type, centred small-capital headings, balanced margins, running heads and page numbers at the outer corners.",
+  "best_for": "General reading: treatises, histories, letters, anything without special layout needs.",
+  "margins": {
+    "standard": {"inner": 1.0, "outer": 1.0, "top": 0.9, "bottom": 1.0},
+    "large":    {"inner": 1.2, "outer": 1.75, "top": 1.1, "bottom": 1.25}
+  },
+  "options": {},
+  "colour": "black and white",
+  "furniture": {"head_font": "8pt 'Pagella', serif", "folio_font": "9pt 'Pagella', serif"}
+}

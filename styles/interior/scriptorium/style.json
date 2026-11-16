@@ -1,0 +1,72 @@
+{
+ "title": "Scriptorium",
+ "description": "Built from Anthony's Scriptorium design system: Cardo text in iron-gall ink on a vellum wash, blackletter titles, rubric labels in IM Fell small capitals, glosses in lapis italic, a gilded or vermilion drop cap opening each chapter, and the asymmetric folio of a real leaf (narrow gutter, wide outer margin, deep foot). Ornaments are type (❧ ✠ ⁂), never drawn borders.",
+ "best_for": "Lectionaries, the Rule, florilegia, glossed texts, devotional books with commentary in the margin.",
+ "source": "https://claude.ai/artifact/YKt396tAXQ3GFjA1hMVBBJ (Scriptorium Design System tokens.json, bundle.css)",
+ "margins": {
+  "standard": {
+   "inner": 0.85,
+   "outer": 1.4,
+   "top": 1.05,
+   "bottom": 1.75
+  },
+  "large": {
+   "inner": 1.0,
+   "outer": 2.4,
+   "top": 1.15,
+   "bottom": 1.9
+  }
+ },
+ "initials": true,
+ "options": {
+  "ground": {
+   "values": [
+    "vellum",
+    "white"
+   ],
+   "default": "vellum",
+   "help": "vellum: tonal wash printed to the edge (file gets bleed); white: plain paper"
+  },
+  "initial": {
+   "values": [
+    "gilt",
+    "vermilion",
+    "lapis"
+   ],
+   "default": "gilt",
+   "help": "the drop cap's pigment"
+  },
+  "ruling": {
+   "values": [
+    "bounding",
+    "off"
+   ],
+   "default": "bounding",
+   "help": "plummet bounding lines around the text block, as pricked and ruled on a leaf"
+  },
+  "columns": {
+   "values": [
+    1,
+    2
+   ],
+   "default": 1
+  }
+ },
+ "colour": "colour (vermilion, lapis, gold; vellum ground); ground=white still needs colour for the rubrics",
+ "furniture": {
+  "head_font": "9pt 'Fell English SC', serif",
+  "folio_font": "10pt 'Fell English SC', serif",
+  "head_css": "letter-spacing: .14em; color: #B23A24; text-transform: lowercase;",
+  "folio_css": "letter-spacing: .14em; color: #554738;",
+  "folio": "rubric",
+  "folio_align": "center",
+  "folio_drop": 0.55,
+  "tint": "#F6EEDF",
+  "tint_option": "ground",
+  "tint_on": "vellum",
+  "frame_option": "ruling",
+  "frame_on": "bounding",
+  "opening_frame": "plummet",
+  "page_frame": "plummet"
+ }
+}

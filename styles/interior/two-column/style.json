@@ -1,0 +1,13 @@
+{
+  "title": "Two-Column Reference",
+  "description": "Compact Times-style type set in two columns with a hairline between them, bold run-in headings and tight margins: the most words per page.",
+  "best_for": "Catechisms, commentaries such as the Catena Aurea, dictionaries, long reference works.",
+  "margins": {
+    "standard": {"inner": 0.85, "outer": 0.7, "top": 0.8, "bottom": 0.8},
+    "large":    {"inner": 1.0, "outer": 1.4, "top": 1.0, "bottom": 1.0}
+  },
+  "options": {"columns": {"values": [1, 2], "default": 2, "help": "1 sets the same page in a single column"}},
+  "colour": "black and white",
+  "furniture": {"head_font": "bold 7.5pt 'Termes', serif", "folio_font": "bold 8.5pt 'Termes', serif",
+                "head_css": "text-transform: uppercase; letter-spacing: .1em; color: #222;"}
+}

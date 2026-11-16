@@ -1,0 +1,16 @@
+{
+ "title": "Black & Gold",
+ "layout": "cloth-frame",
+ "emblem": "cross-circle",
+ "description": "Black cloth, gold frame and title: the plainest and most formal of the cloth covers.",
+ "palette": {
+  "ground": "#171615",
+  "ground2": "#0f0e0d",
+  "title": "#c8a656",
+  "line": "#c8a656",
+  "text": "#ece6d8",
+  "muted": "#bfb59c",
+  "accent": "#c8a656",
+  "accent2": "#c8a656"
+ }
+}

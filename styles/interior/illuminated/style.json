@@ -1,0 +1,83 @@
+{
+ "title": "Illuminated Manuscript",
+ "description": "After a Gothic book of hours: blackletter (or uncial) headings, gilded initial letters on painted grounds, titles and rubrics in red and blue, an ivy-and-bar border around each chapter opening, and an optional vellum page tint.",
+ "best_for": "Prayer books, psalters, offices, the Rule, lives of saints, gift and presentation editions.",
+ "margins": {
+  "standard": {
+   "inner": 1.0,
+   "outer": 1.35,
+   "top": 1.0,
+   "bottom": 1.45
+  },
+  "large": {
+   "inner": 1.15,
+   "outer": 1.9,
+   "top": 1.15,
+   "bottom": 1.7
+  }
+ },
+ "initials": true,
+ "options": {
+  "script": {
+   "values": [
+    "blackletter",
+    "uncial"
+   ],
+   "default": "blackletter",
+   "help": "lettering for titles and headings"
+  },
+  "text": {
+   "values": [
+    "fell",
+    "garamond"
+   ],
+   "default": "fell",
+   "help": "Fell is an early printed face; Garamond is smoother"
+  },
+  "tint": {
+   "values": [
+    "on",
+    "off"
+   ],
+   "default": "on",
+   "help": "vellum-coloured pages (printed to the edge, so the file gets bleed)"
+  },
+  "borders": {
+   "values": [
+    "openings",
+    "every-page",
+    "none"
+   ],
+   "default": "openings",
+   "help": "where the painted border appears"
+  },
+  "columns": {
+   "values": [
+    1,
+    2
+   ],
+   "default": 1
+  },
+  "pilcrows": {
+   "values": [
+    "off",
+    "on"
+   ],
+   "default": "off",
+   "help": "red and blue paragraph marks instead of indents"
+  }
+ },
+ "colour": "colour (gold, red, blue; vellum tint)",
+ "furniture": {
+  "head_font": "9pt 'Fraktur', serif",
+  "folio_font": "10pt 'Fell', serif",
+  "head_css": "color: #a3201b; letter-spacing: .02em;",
+  "folio_css": "color: #a3201b;",
+  "folio": "dotted",
+  "folio_align": "center",
+  "tint": "#f3e9d2",
+  "opening_frame": "illuminated",
+  "page_frame": "illuminated-light",
+  "folio_drop": 0.5
+ }
+}

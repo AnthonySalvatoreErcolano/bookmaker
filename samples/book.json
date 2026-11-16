@@ -1,0 +1,17 @@
+{
+  "title": "A Book of Specimens",
+  "author": "",
+  "trim": "letter",
+  "binding": "coil",
+  "interior": {"style": "illuminated", "margins": "standard", "options": {}},
+  "cover": {
+    "style": "illuminated",
+    "kicker": "Sample Pages",
+    "title_html": "A Book<span class=\"of\">of</span>Specimens",
+    "range": "Trent · the Summa · the Order of Mass",
+    "back": ["Every style, one set of pages.",
+             "This specimen runs the same texts through each bookmaker interior style: conciliar decrees with their canons, an article of the Summa with objections and replies, the Order of Mass in Latin and English, and a question-and-answer section."],
+    "features": "{pages} pages."
+  },
+  "volumes": [{"manuscript": "sample-manuscript.html", "label": "Sample Pages", "range": "Trent, the Summa, the Order of Mass"}]
+}

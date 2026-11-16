@@ -1,0 +1,21 @@
+{
+ "title": "Modern Block",
+ "layout": "modern",
+ "fonts": {
+  "title": "'Source Sans', sans-serif",
+  "text": "'Pagella', serif",
+  "spine": "'Source Sans', sans-serif"
+ },
+ "description": "A white cover with a solid colour block, large left-aligned sans-serif title. Pairs with Modern Clean.",
+ "palette": {
+  "ground": "#fbfaf7",
+  "ground2": "#1d6a73",
+  "title": "#161a1d",
+  "line": "#fbfaf7",
+  "text": "#22282c",
+  "muted": "#59646b",
+  "accent": "#1d6a73",
+  "accent2": "#1d6a73"
+ },
+ "css": ".spine .vt, .spine .num, .spine .vr { color: #fbfaf7; } .back p.lead { font-style: normal; font-weight: 600; color: #1d6a73; }"
+}

@@ -1,0 +1,229 @@
+{
+ "title": "The Ecumenical Councils of the Church",
+ "trim": "letter",
+ "binding": "dust-jacket",
+ "credit": "Councils 1–18 and Vatican I trans. Norman P. Tanner, <em>Decrees of the Ecumenical Councils</em>; Trent trans. J. Waterworth (1848); Vatican II from vatican.va. Texts via papalencyclicals.net.",
+ "doc_start": "right",
+ "index_terms": [
+  "councils_index_terms.txt"
+ ],
+ "glossary": [
+  "councils_glossary.txt"
+ ],
+ "glossary_note": "Definitions are editorial and are not part of the council texts.",
+ "interior": {
+  "style": "classic-notes",
+  "margins": "standard"
+ },
+ "cover": {
+  "style": "oxblood-gold",
+  "kicker": "The Decrees of",
+  "title_html": "The Ecumenical<br>Councils<span class=\"of\">of the</span>Church",
+  "spine_title": "The Ecumenical Councils of the Church",
+  "emblem": "cross-circle",
+  "features": "8.5 × 11 pages with a wide outer margin, divided by a faint rule, for notes. Glossary of ecclesiastical and theological terms. Page-accurate index.",
+  "series": [
+   "The Ecumenical Councils of the Church",
+   "Volume I: Nicaea I to Lateran V",
+   "Volume II: Trent to Vatican II"
+  ]
+ },
+ "source": {
+  "adapter": "sources/council_scraper.py then sources/book_format.py",
+  "notes": "python sources/council_scraper.py; python sources/book_format.py output/raw -o books/councils/manuscripts (rename councils.html)"
+ },
+ "volumes": [
+  {
+   "manuscript": "manuscripts/councils.html",
+   "chapters": "1-18",
+   "stem": "councils-vol1",
+   "label": "Volume I",
+   "numeral": "I",
+   "range": "From Nicaea I (325) to Lateran V (1512–1517)",
+   "cover": {
+    "volume": "Volume I",
+    "range": "From Nicaea I (325) to Lateran V (1512–1517)",
+    "spine_sub": "Nicaea I – Lateran V",
+    "spine_num": "I",
+    "back": [
+     "Twelve centuries of the Church defining her faith, gathered in one volume.",
+     "Volume I contains the decrees of the first eighteen ecumenical councils, from the First Council of Nicaea, where the Creed was first professed against Arius, to the Fifth Lateran Council on the eve of the Reformation. Along the way are Constantinople’s completion of the Creed, Ephesus and Chalcedon on the person of Christ, Nicaea II’s defence of holy images, the great reforming councils of the Lateran, Lyons and Vienne, Constance and the end of the Western Schism, and Florence’s decrees of union with the Greeks, Armenians and Copts."
+    ],
+    "flap_back": {
+     "heading": "Councils in this volume",
+     "rows": [
+      [
+       "I",
+       "Nicaea I",
+       "325"
+      ],
+      [
+       "II",
+       "Constantinople I",
+       "381"
+      ],
+      [
+       "III",
+       "Ephesus",
+       "431"
+      ],
+      [
+       "IV",
+       "Chalcedon",
+       "451"
+      ],
+      [
+       "V",
+       "Constantinople II",
+       "553"
+      ],
+      [
+       "VI",
+       "Constantinople III",
+       "680–681"
+      ],
+      [
+       "VII",
+       "Nicaea II",
+       "787"
+      ],
+      [
+       "VIII",
+       "Constantinople IV",
+       "869–870"
+      ],
+      [
+       "IX",
+       "Lateran I",
+       "1123"
+      ],
+      [
+       "X",
+       "Lateran II",
+       "1139"
+      ],
+      [
+       "XI",
+       "Lateran III",
+       "1179"
+      ],
+      [
+       "XII",
+       "Lateran IV",
+       "1215"
+      ],
+      [
+       "XIII",
+       "Lyons I",
+       "1245"
+      ],
+      [
+       "XIV",
+       "Lyons II",
+       "1274"
+      ],
+      [
+       "XV",
+       "Vienne",
+       "1311–1312"
+      ],
+      [
+       "XVI",
+       "Constance",
+       "1414–1418"
+      ],
+      [
+       "XVII",
+       "Basel–Ferrara–Florence",
+       "1431–1445"
+      ],
+      [
+       "XVIII",
+       "Lateran V",
+       "1512–1517"
+      ]
+     ]
+    },
+    "flap_front": {
+     "heading": "Volume I",
+     "text": [
+      "From Nicaea I (325) to Lateran V (1512–1517).",
+      "Each council opens with an introduction to its setting and is followed by its creeds, canons, decrees and letters. Canons and anathemas are set apart so the Church’s binding definitions stand out from the surrounding text."
+     ],
+     "small": [
+      "Translations from Norman P. Tanner, Decrees of the Ecumenical Councils. Texts via papalencyclicals.net.",
+      "{pages} pages."
+     ]
+    }
+   }
+  },
+  {
+   "manuscript": "manuscripts/councils.html",
+   "chapters": "19-21",
+   "stem": "councils-vol2",
+   "label": "Volume II",
+   "numeral": "II",
+   "range": "From Trent (1545–1563) to Vatican II (1962–1965)",
+   "cover": {
+    "volume": "Volume II",
+    "range": "From Trent (1545–1563) to Vatican II (1962–1965)",
+    "spine_sub": "Trent – Vatican II",
+    "spine_num": "II",
+    "back": [
+     "The councils that shaped the modern Church.",
+     "Volume II begins with the Council of Trent: its decrees on Scripture and tradition, justification, the sacraments and the Mass, with their canons, in J. Waterworth’s classic 1848 translation. It continues with the First Vatican Council’s teaching on faith and reason and on the authority of the Roman Pontiff, and closes with the complete documents of the Second Vatican Council: its four constitutions, nine decrees and three declarations."
+    ],
+    "flap_back": {
+     "heading": "Councils in this volume",
+     "rows": [
+      [
+       "XIX",
+       "Trent",
+       "1545–1563"
+      ],
+      [
+       "XX",
+       "Vatican I",
+       "1869–1870"
+      ],
+      [
+       "XXI",
+       "Vatican II",
+       "1962–1965"
+      ]
+     ],
+     "list_heading": "The sixteen documents of Vatican II",
+     "list": [
+      "Sacrosanctum Concilium",
+      "Lumen Gentium",
+      "Dei Verbum",
+      "Gaudium et Spes",
+      "Inter Mirifica",
+      "Orientalium Ecclesiarum",
+      "Unitatis Redintegratio",
+      "Christus Dominus",
+      "Perfectae Caritatis",
+      "Optatam Totius",
+      "Apostolicam Actuositatem",
+      "Ad Gentes",
+      "Presbyterorum Ordinis",
+      "Gravissimum Educationis",
+      "Nostra Aetate",
+      "Dignitatis Humanae"
+     ]
+    },
+    "flap_front": {
+     "heading": "Volume II",
+     "text": [
+      "From Trent (1545–1563) to Vatican II (1962–1965).",
+      "As in Volume I, canons and anathemas are set apart from the text, and each document of Vatican II begins on its own page under its Latin title."
+     ],
+     "small": [
+      "Trent trans. J. Waterworth (1848); Vatican I trans. Norman P. Tanner; Vatican II from vatican.va.",
+      "{pages} pages."
+     ]
+    }
+   }
+  }
+ ]
+}

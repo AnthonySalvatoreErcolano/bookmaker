@@ -1,0 +1,13 @@
+{
+  "title": "Classic, Wide Note Margin",
+  "description": "The Classic page with a wide outer margin divided from the text by a faint rule, for the reader's own notes. The look of the Councils, Papal Documents and Summa volumes.",
+  "best_for": "Study editions: council decrees, encyclicals, theology, anything people annotate.",
+  "margins": {
+    "standard": {"inner": 1.0, "outer": 2.5, "top": 0.95, "bottom": 1.0},
+    "large":    {"inner": 1.1, "outer": 3.0, "top": 1.05, "bottom": 1.1}
+  },
+  "note_rule": true,
+  "options": {"note_rule": {"values": ["on", "off"], "default": "on", "help": "the faint rule beside the note margin"}},
+  "colour": "black and white (canon and creed bars print grey)",
+  "furniture": {"head_font": "8pt 'Pagella', serif", "folio_font": "9pt 'Pagella', serif"}
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Modern Clean",
+  "description": "Crisp sans-serif headings in a single accent colour, left-aligned chapter titles with plenty of white space, a readable serif body, and numbered steps, figures and tables styled for instruction.",
+  "best_for": "Trade and how-to books (carpentry, crafts), manuals, guides, contemporary non-fiction.",
+  "margins": {
+    "standard": {"inner": 0.95, "outer": 0.85, "top": 0.85, "bottom": 0.95},
+    "large":    {"inner": 1.15, "outer": 1.6, "top": 1.0, "bottom": 1.1}
+  },
+  "options": {"accent": {"values": ["teal", "rust", "graphite"], "default": "teal"}},
+  "colour": "colour for the accent; graphite prints well in black and white",
+  "furniture": {"head_font": "8pt 'Source Sans', sans-serif", "folio_font": "600 9pt 'Source Sans', sans-serif",
+                "head_css": "text-transform: uppercase; letter-spacing: .14em; color: #777;"}
+}

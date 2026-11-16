@@ -1,0 +1,16 @@
+{
+ "title": "Navy & Silver",
+ "layout": "cloth-frame",
+ "emblem": "star",
+ "description": "Midnight-navy cloth with silver frame, lettering and a star emblem.",
+ "palette": {
+  "ground": "#14223f",
+  "ground2": "#0f1a31",
+  "title": "#d4d8de",
+  "line": "#b9c0c9",
+  "text": "#eef0f3",
+  "muted": "#a9b3c1",
+  "accent": "#d4d8de",
+  "accent2": "#d4d8de"
+ }
+}

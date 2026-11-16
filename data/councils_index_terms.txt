@@ -1,0 +1,200 @@
+# Index terms for the Councils volumes
+#
+# One entry per line:   Index heading | other spelling | other spelling | options
+#
+#   Matching ignores letter case, except variants that start with "="  (=Leo matches "Leo", not "leonine").
+#   A variant ending in "*" matches any word starting with it        (anathem* = anathema, anathematised).
+#   If a heading has a comma or brackets, list what to look for as variants;
+#   otherwise the heading itself is searched for too.
+#
+#   Options:
+#     #3-7        only look in councils 3 to 7        (#19 or #4,6,8-10 also work)
+#     see: X      print "see X" under this heading     (use with no variants for a pure cross-reference)
+#     see also: X print "see also X" after the page numbers
+#
+#   Notes and footnotes sections are not indexed (they are mostly citations).
+#   Lines starting with # are comments; [Group] lines are only for your reading.
+#   Re-run book_print.py after editing: page numbers are recalculated every time.
+
+[People: early church]
+Apollinarius | Apollinarian* | Apollinaris
+Arius | Arian* | Arianism | see also: Consubstantial
+Athanasius | #1-8
+Basil the Great | =Basil | #7,10 | see also: Basil I, Emperor
+Basil I, Emperor | =Basil | #8
+Celestine I, Pope | =Celestine | #3-5
+Constantine, Emperor | =Constantine | #1-7
+Cyril of Alexandria | =Cyril | #3-7
+Damasus, Pope | =Damasus
+Dioscorus
+Eusebius of Caesarea | =Eusebius | #1
+Eutyches | Eutychian* | see also: Monophysites
+Flavian of Constantinople | =Flavian
+Gregory of Nazianzus | Gregory the Theologian
+Honorius, Pope | =Honorius | #6-8
+Ignatius of Constantinople | =Ignatius | #8 | see also: Photius
+Justinian, Emperor | =Justinian
+Leo I, Pope (Leo the Great) | =Leo | #4-6,9 | see also: Tome of Leo
+Tome of Leo | Tome of Leo | letter of Pope Leo | letter of Leo | Leo to Flavian
+Macedonius | Macedonian* | Pneumatomachi
+Meletius
+Nestorius | Nestorian* | see also: Mary, Mother of God
+Origen | Origenist*
+Paul of Samosata | Paulianist* | Paulinist*
+Photius | see also: Ignatius of Constantinople
+Sergius of Constantinople | =Sergius | #6-8
+Theodore of Mopsuestia | see also: Three Chapters
+Theodoret of Cyrrhus | =Theodoret
+Ibas of Edessa | =Ibas
+
+[People: medieval and later]
+Frederick II, Emperor | =Frederick | #13
+Gregory X, Pope | Gregory X | #14
+Innocent III, Pope | Innocent III
+Innocent IV, Pope | Innocent IV
+John XXIII (antipope) | John XXIII | #16
+Jan Hus | =Hus | Huss | Hussite*
+John Wyclif | Wyclif* | Wycliffe
+Martin V, Pope | Martin V
+Eugenius IV, Pope | Eugenius | Eugene IV | #17
+Julius II, Pope | Julius II
+Leo X, Pope | Leo X
+Paul III, Pope | Paul III
+Julius III, Pope | Julius III
+Pius IV, Pope | Pius IV
+Pius IX, Pope | Pius IX
+John XXIII, Pope | John XXIII | #21
+Paul VI, Pope | Paul VI
+Templars | Knights Templar | Order of the Temple | =Temple | #15
+
+[Heresies, schisms and movements]
+Beguines and Beghards | Beguin* | Beghard*
+Cathars | =Cathar*
+Conciliarism | superior to the pope | authority immediately from Christ
+Iconoclasm | iconoclas* | see also: Images, veneration of
+Manichees | Manichae* | Manichee*
+Messalians | Messalian* | Euchites
+Monophysites | monophysit* | one nature | #3-8 | see also: Eutyches
+Monothelites | monothelet* | monothelit* | one will | #6-8
+Montanists | Montanist*
+Novatians | Novatian*
+Quartodecimans | quartodeciman*
+Sabellius | Sabellian*
+Schism | schism*
+Simony | simon* | simoniac*
+Three Chapters | see also: Theodore of Mopsuestia
+Waldensians | Waldens* | Poor of Lyons
+
+[Doctrine]
+Ascension
+Baptism | baptis*
+Christ, two natures of | two natures
+Christ, two wills of | two wills | two natural wills | two natural operations
+Confession (sacramental) | sacramental confession | confession of sins | see also: Penance
+Confirmation (sacrament) | confirmation | #19-21
+Consubstantial (homoousios) | consubstantial | homoousios | homoousion | one substance
+Creation | creator of all things
+Eucharist | eucharist* | sacrament of the altar | body and blood of Christ | see also: Transubstantiation; Sacrifice of the Mass
+Extreme Unction | extreme unction | anointing of the sick | unction of the sick
+Faith and reason
+Filioque | from the Father and the Son | proceeds from the Father and the Son | from the Father and from the Son
+Grace (justifying) | justifying grace | sanctifying grace | grace of justification | prevenient grace
+Holy Orders | sacrament of order | holy orders | ordination
+Hypostasis | hypostas* | hypostatic*
+Images, veneration of | holy images | sacred images | veneration of images | venerable images | see also: Iconoclasm
+Incarnation | incarnat*
+Indulgences | indulgence*
+Infallibility | infallib*
+Justification | justif*
+Marriage | matrimon* | marriage*
+Mary, Mother of God | Theotokos | mother of God | God-bearer | blessed Virgin | holy virgin | virgin Mary
+Original sin | original sin
+Papal primacy | primacy | primate of the whole church | successor of blessed Peter
+Penance | penance | penitents | see also: Confession (sacramental)
+Purgatory | purgator*
+Relics | relics
+Revelation, divine | divine revelation | revealed by God | see also: Dei Verbum
+Sacraments (in general) | sacraments in general | seven sacraments | sacraments of the new law
+Sacrifice of the Mass | sacrifice of the mass | holy sacrifice | see also: Eucharist
+Saints, invocation of | invocation of saints | invocation of the saints | intercession of the saints
+Scripture | sacred scripture* | holy scripture* | canonical scripture* | canon of scripture | sacred books | see also: Vulgate
+Tradition | unwritten traditions | sacred tradition | apostolic tradition*
+Transubstantiation | transubstantiat*
+Trinity | three persons | triune | holy and undivided Trinity
+Vulgate
+
+[Church order and discipline]
+Annates
+Bishops, residence of | residence | #12-21
+Canonesses | canoness*
+Catechumens | catechumen*
+Celibacy | celibacy | continence of clerics | perfect continence
+Chorepiscopus | chorepiscop*
+Clandestine marriage | clandestine
+Concubinage | concubin*
+Consanguinity | consanguinity | degrees of affinity
+Deaconesses | deaconess*
+Dispensations | dispensat*
+Elections of bishops | election of bishops | election of a bishop | election of the bishop
+Exemption | exemption*
+Interdict | interdict*
+Lay investiture | investiture
+Metropolitans | metropolitan*
+Pluralism (benefices) | plurality of benefices | several benefices
+Religious orders | religious orders | mendicant* | friars
+Seminaries | seminar*
+Synods, provincial | provincial synod* | provincial council*
+Tithes | tithe*
+Usury | usur*
+
+[Peoples and places]
+Alexandria
+Antioch
+Constantinople, see of | see of Constantinople | church of Constantinople | bishop of Constantinople | New Rome
+Jerusalem | =Aelia
+Greeks, union with | union with the Greeks | union of the Greeks | Greek church | Latins and Greeks
+Jews | Jew* | Jewish
+Saracens | Saracen* | Muslims | Moslem*
+Crusades | crusade* | Holy Land | holy land | help of the holy Land | aid of the holy Land
+
+[Second Vatican Council themes]
+Apostolate of the laity | apostolate of the laity | lay apostolate | see also: Apostolicam Actuositatem
+Collegiality | college of bishops | episcopal college
+Conscience | #19-21
+Deacons, permanent | permanent diaconate | permanent deacons | permanent order
+Eastern Churches | Eastern Churches | Oriental Churches | see also: Orientalium Ecclesiarum
+Ecumenism | ecumenism | ecumenical movement | see also: Unitatis Redintegratio
+Education, Christian | see: Gravissimum Educationis
+Episcopal conferences | episcopal conference*
+Evangelization | evangeliz*
+Family | see: Gaudium et Spes
+Laity | see: Lumen Gentium; Apostolicam Actuositatem
+Liturgy | see: Sacrosanctum Concilium
+Missions | see: Ad Gentes
+Non-Christian religions | non-Christian | Hinduism | Buddhism | Islam | see also: Nostra Aetate
+People of God | People of God
+Priests, ministry and life of | see: Presbyterorum Ordinis; Optatam Totius
+Religious freedom | religious freedom | religious liberty | see also: Dignitatis Humanae
+Religious life, renewal of | see: Perfectae Caritatis
+Bishops, pastoral office of | see: Christus Dominus
+Social communications | see: Inter Mirifica
+Vernacular | vernacular | mother tongue
+War and peace | arms race | total war | peace among nations | waging of war
+
+[Vatican II documents: these give the page where each document begins]
+Sacrosanctum Concilium | =doc
+Lumen Gentium | =doc
+Dei Verbum | =doc
+Gaudium et Spes | =doc
+Inter Mirifica | =doc
+Orientalium Ecclesiarum | =doc
+Unitatis Redintegratio | =doc
+Christus Dominus | =doc
+Perfectae Caritatis | =doc
+Optatam Totius | =doc
+Apostolicam Actuositatem | =doc
+Ad Gentes | =doc
+Presbyterorum Ordinis | =doc
+Gravissimum Educationis | =doc
+Nostra Aetate | =doc
+Dignitatis Humanae | =doc

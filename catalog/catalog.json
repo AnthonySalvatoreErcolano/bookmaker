@@ -1,0 +1,532 @@
+{
+ "interior": {
+  "classic": {
+   "title": "Classic",
+   "description": "A traditional book page: Palatino-style type, centred small-capital headings, balanced margins, running heads and page numbers at the outer corners.",
+   "best_for": "General reading: treatises, histories, letters, anything without special layout needs.",
+   "colour": "black and white",
+   "options": {},
+   "margins": {
+    "standard": {
+     "inner": 1.0,
+     "outer": 1.0,
+     "top": 0.9,
+     "bottom": 1.0
+    },
+    "large": {
+     "inner": 1.2,
+     "outer": 1.75,
+     "top": 1.1,
+     "bottom": 1.25
+    }
+   },
+   "images": {
+    "standard-opening": "interior/classic-standard-opening.jpg",
+    "standard-article": "interior/classic-standard-article.jpg",
+    "standard-parallel": "interior/classic-standard-parallel.jpg",
+    "standard-questions": "interior/classic-standard-questions.jpg",
+    "large-article": "interior/classic-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 1.0,
+    "outer": 1.0,
+    "top": 0.9,
+    "bottom": 1.0
+   },
+   "large_geometry": {
+    "inner": 1.2,
+    "outer": 1.75,
+    "top": 1.1,
+    "bottom": 1.25
+   }
+  },
+  "classic-notes": {
+   "title": "Classic, Wide Note Margin",
+   "description": "The Classic page with a wide outer margin divided from the text by a faint rule, for the reader's own notes. The look of the Councils, Papal Documents and Summa volumes.",
+   "best_for": "Study editions: council decrees, encyclicals, theology, anything people annotate.",
+   "colour": "black and white (canon and creed bars print grey)",
+   "options": {
+    "note_rule": {
+     "values": [
+      "on",
+      "off"
+     ],
+     "default": "on",
+     "help": "the faint rule beside the note margin"
+    }
+   },
+   "margins": {
+    "standard": {
+     "inner": 1.0,
+     "outer": 2.5,
+     "top": 0.95,
+     "bottom": 1.0
+    },
+    "large": {
+     "inner": 1.1,
+     "outer": 3.0,
+     "top": 1.05,
+     "bottom": 1.1
+    }
+   },
+   "images": {
+    "standard-opening": "interior/classic-notes-standard-opening.jpg",
+    "standard-article": "interior/classic-notes-standard-article.jpg",
+    "standard-parallel": "interior/classic-notes-standard-parallel.jpg",
+    "standard-questions": "interior/classic-notes-standard-questions.jpg",
+    "large-article": "interior/classic-notes-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 1.0,
+    "outer": 2.5,
+    "top": 0.95,
+    "bottom": 1.0
+   },
+   "large_geometry": {
+    "inner": 1.1,
+    "outer": 3.0,
+    "top": 1.05,
+    "bottom": 1.1
+   }
+  },
+  "illuminated": {
+   "title": "Illuminated Manuscript",
+   "description": "After a Gothic book of hours: blackletter (or uncial) headings, gilded initial letters on painted grounds, titles and rubrics in red and blue, an ivy-and-bar border around each chapter opening, and an optional vellum page tint.",
+   "best_for": "Prayer books, psalters, offices, the Rule, lives of saints, gift and presentation editions.",
+   "colour": "colour (gold, red, blue; vellum tint)",
+   "options": {
+    "script": {
+     "values": [
+      "blackletter",
+      "uncial"
+     ],
+     "default": "blackletter",
+     "help": "lettering for titles and headings"
+    },
+    "text": {
+     "values": [
+      "fell",
+      "garamond"
+     ],
+     "default": "fell",
+     "help": "Fell is an early printed face; Garamond is smoother"
+    },
+    "tint": {
+     "values": [
+      "on",
+      "off"
+     ],
+     "default": "on",
+     "help": "vellum-coloured pages (printed to the edge, so the file gets bleed)"
+    },
+    "borders": {
+     "values": [
+      "openings",
+      "every-page",
+      "none"
+     ],
+     "default": "openings",
+     "help": "where the painted border appears"
+    },
+    "columns": {
+     "values": [
+      1,
+      2
+     ],
+     "default": 1
+    },
+    "pilcrows": {
+     "values": [
+      "off",
+      "on"
+     ],
+     "default": "off",
+     "help": "red and blue paragraph marks instead of indents"
+    }
+   },
+   "margins": {
+    "standard": {
+     "inner": 1.0,
+     "outer": 1.35,
+     "top": 1.0,
+     "bottom": 1.45
+    },
+    "large": {
+     "inner": 1.15,
+     "outer": 1.9,
+     "top": 1.15,
+     "bottom": 1.7
+    }
+   },
+   "images": {
+    "standard-opening": "interior/illuminated-standard-opening.jpg",
+    "standard-article": "interior/illuminated-standard-article.jpg",
+    "standard-parallel": "interior/illuminated-standard-parallel.jpg",
+    "standard-questions": "interior/illuminated-standard-questions.jpg",
+    "large-article": "interior/illuminated-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 1.0,
+    "outer": 1.35,
+    "top": 1.0,
+    "bottom": 1.45
+   },
+   "large_geometry": {
+    "inner": 1.15,
+    "outer": 1.9,
+    "top": 1.15,
+    "bottom": 1.7
+   }
+  },
+  "large-print": {
+   "title": "Large Print",
+   "description": "14-point type with generous line spacing, ragged right with no hyphenation, high contrast and bold headings. Sans-serif Atkinson Hyperlegible by default (designed for low vision), or a serif.",
+   "best_for": "Readers with low vision; books to read aloud from; parish and classroom copies.",
+   "colour": "black and white",
+   "options": {
+    "face": {
+     "values": [
+      "sans",
+      "serif"
+     ],
+     "default": "sans"
+    }
+   },
+   "margins": {
+    "standard": {
+     "inner": 0.9,
+     "outer": 0.8,
+     "top": 0.8,
+     "bottom": 0.9
+    },
+    "large": {
+     "inner": 1.1,
+     "outer": 1.4,
+     "top": 1.0,
+     "bottom": 1.1
+    }
+   },
+   "images": {
+    "standard-opening": "interior/large-print-standard-opening.jpg",
+    "standard-article": "interior/large-print-standard-article.jpg",
+    "standard-parallel": "interior/large-print-standard-parallel.jpg",
+    "standard-questions": "interior/large-print-standard-questions.jpg",
+    "large-article": "interior/large-print-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 0.9,
+    "outer": 0.8,
+    "top": 0.8,
+    "bottom": 0.9
+   },
+   "large_geometry": {
+    "inner": 1.1,
+    "outer": 1.4,
+    "top": 1.0,
+    "bottom": 1.1
+   }
+  },
+  "modern": {
+   "title": "Modern Clean",
+   "description": "Crisp sans-serif headings in a single accent colour, left-aligned chapter titles with plenty of white space, a readable serif body, and numbered steps, figures and tables styled for instruction.",
+   "best_for": "Trade and how-to books (carpentry, crafts), manuals, guides, contemporary non-fiction.",
+   "colour": "colour for the accent; graphite prints well in black and white",
+   "options": {
+    "accent": {
+     "values": [
+      "teal",
+      "rust",
+      "graphite"
+     ],
+     "default": "teal"
+    }
+   },
+   "margins": {
+    "standard": {
+     "inner": 0.95,
+     "outer": 0.85,
+     "top": 0.85,
+     "bottom": 0.95
+    },
+    "large": {
+     "inner": 1.15,
+     "outer": 1.6,
+     "top": 1.0,
+     "bottom": 1.1
+    }
+   },
+   "images": {
+    "standard-opening": "interior/modern-standard-opening.jpg",
+    "standard-article": "interior/modern-standard-article.jpg",
+    "standard-parallel": "interior/modern-standard-parallel.jpg",
+    "standard-questions": "interior/modern-standard-questions.jpg",
+    "large-article": "interior/modern-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 0.95,
+    "outer": 0.85,
+    "top": 0.85,
+    "bottom": 0.95
+   },
+   "large_geometry": {
+    "inner": 1.15,
+    "outer": 1.6,
+    "top": 1.0,
+    "bottom": 1.1
+   }
+  },
+  "red-black": {
+   "title": "Red & Black Liturgical",
+   "description": "Rubrics, titles and initials in red, text in black, Garamond type and narrow margins so Latin and English fit side by side. Red initial letters open each chapter.",
+   "best_for": "Missals, breviaries, offices, prayer books, parallel-text editions.",
+   "colour": "colour (red); choose rubric=black for black-and-white printing",
+   "options": {
+    "rubric": {
+     "values": [
+      "red",
+      "black"
+     ],
+     "default": "red",
+     "help": "black makes it a black-and-white book"
+    }
+   },
+   "margins": {
+    "standard": {
+     "inner": 0.85,
+     "outer": 0.7,
+     "top": 0.8,
+     "bottom": 0.85
+    },
+    "large": {
+     "inner": 1.0,
+     "outer": 1.3,
+     "top": 1.0,
+     "bottom": 1.0
+    }
+   },
+   "images": {
+    "standard-opening": "interior/red-black-standard-opening.jpg",
+    "standard-article": "interior/red-black-standard-article.jpg",
+    "standard-parallel": "interior/red-black-standard-parallel.jpg",
+    "standard-questions": "interior/red-black-standard-questions.jpg",
+    "large-article": "interior/red-black-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 0.85,
+    "outer": 0.7,
+    "top": 0.8,
+    "bottom": 0.85
+   },
+   "large_geometry": {
+    "inner": 1.0,
+    "outer": 1.3,
+    "top": 1.0,
+    "bottom": 1.0
+   }
+  },
+  "two-column": {
+   "title": "Two-Column Reference",
+   "description": "Compact Times-style type set in two columns with a hairline between them, bold run-in headings and tight margins: the most words per page.",
+   "best_for": "Catechisms, commentaries such as the Catena Aurea, dictionaries, long reference works.",
+   "colour": "black and white",
+   "options": {
+    "columns": {
+     "values": [
+      1,
+      2
+     ],
+     "default": 2,
+     "help": "1 sets the same page in a single column"
+    }
+   },
+   "margins": {
+    "standard": {
+     "inner": 0.85,
+     "outer": 0.7,
+     "top": 0.8,
+     "bottom": 0.8
+    },
+    "large": {
+     "inner": 1.0,
+     "outer": 1.4,
+     "top": 1.0,
+     "bottom": 1.0
+    }
+   },
+   "images": {
+    "standard-opening": "interior/two-column-standard-opening.jpg",
+    "standard-article": "interior/two-column-standard-article.jpg",
+    "standard-parallel": "interior/two-column-standard-parallel.jpg",
+    "standard-questions": "interior/two-column-standard-questions.jpg",
+    "large-article": "interior/two-column-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 0.85,
+    "outer": 0.7,
+    "top": 0.8,
+    "bottom": 0.8
+   },
+   "large_geometry": {
+    "inner": 1.0,
+    "outer": 1.4,
+    "top": 1.0,
+    "bottom": 1.0
+   }
+  },
+  "scriptorium": {
+   "title": "Scriptorium",
+   "description": "Built from Anthony's Scriptorium design system: Cardo text in iron-gall ink on a vellum wash, blackletter titles, rubric labels in IM Fell small capitals, glosses in lapis italic, a gilded or vermilion drop cap opening each chapter, and the asymmetric folio of a real leaf (narrow gutter, wide outer margin, deep foot). Ornaments are type (❧ ✠ ⁂), never drawn borders.",
+   "best_for": "Lectionaries, the Rule, florilegia, glossed texts, devotional books with commentary in the margin.",
+   "colour": "colour (vermilion, lapis, gold; vellum ground); ground=white still needs colour for the rubrics",
+   "options": {
+    "ground": {
+     "values": [
+      "vellum",
+      "white"
+     ],
+     "default": "vellum",
+     "help": "vellum: tonal wash printed to the edge (file gets bleed); white: plain paper"
+    },
+    "initial": {
+     "values": [
+      "gilt",
+      "vermilion",
+      "lapis"
+     ],
+     "default": "gilt",
+     "help": "the drop cap's pigment"
+    },
+    "ruling": {
+     "values": [
+      "bounding",
+      "off"
+     ],
+     "default": "bounding",
+     "help": "plummet bounding lines around the text block, as pricked and ruled on a leaf"
+    },
+    "columns": {
+     "values": [
+      1,
+      2
+     ],
+     "default": 1
+    }
+   },
+   "margins": {
+    "standard": {
+     "inner": 0.85,
+     "outer": 1.4,
+     "top": 1.05,
+     "bottom": 1.75
+    },
+    "large": {
+     "inner": 1.0,
+     "outer": 2.4,
+     "top": 1.15,
+     "bottom": 1.9
+    }
+   },
+   "images": {
+    "standard-opening": "interior/scriptorium-standard-opening.jpg",
+    "standard-article": "interior/scriptorium-standard-article.jpg",
+    "standard-parallel": "interior/scriptorium-standard-parallel.jpg",
+    "standard-questions": "interior/scriptorium-standard-questions.jpg",
+    "large-article": "interior/scriptorium-large-article.jpg"
+   },
+   "standard_geometry": {
+    "inner": 0.85,
+    "outer": 1.4,
+    "top": 1.05,
+    "bottom": 1.75
+   },
+   "large_geometry": {
+    "inner": 1.0,
+    "outer": 2.4,
+    "top": 1.15,
+    "bottom": 1.9
+   }
+  }
+ },
+ "covers": {
+  "black-gold": {
+   "title": "Black & Gold",
+   "description": "Black cloth, gold frame and title: the plainest and most formal of the cloth covers.",
+   "layout": "cloth-frame",
+   "image": "covers/black-gold.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  },
+  "forest-gold": {
+   "title": "Forest & Gold",
+   "description": "Dark green cloth with antique-gold frame and a four-petal fleuron.",
+   "layout": "cloth-frame",
+   "image": "covers/forest-gold.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  },
+  "illuminated": {
+   "title": "Illuminated",
+   "description": "Vellum ground with a painted bar-and-ivy border, a gilded initial and blackletter title in red and blue. Pairs with the Illuminated Manuscript interior.",
+   "layout": "illuminated",
+   "image": "covers/illuminated.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  },
+  "modern-block": {
+   "title": "Modern Block",
+   "description": "A white cover with a solid colour block, large left-aligned sans-serif title. Pairs with Modern Clean.",
+   "layout": "modern",
+   "image": "covers/modern-block.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  },
+  "navy-silver": {
+   "title": "Navy & Silver",
+   "description": "Midnight-navy cloth with silver frame, lettering and a star emblem.",
+   "layout": "cloth-frame",
+   "image": "covers/navy-silver.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  },
+  "oxblood-gold": {
+   "title": "Oxblood & Gold",
+   "description": "Deep oxblood cloth with a double gold frame, gold title and emblem. The Councils jackets.",
+   "layout": "cloth-frame",
+   "image": "covers/oxblood-gold.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  },
+  "vellum": {
+   "title": "Vellum Title Page",
+   "description": "A cream cover set like an early printed title page: black and red type inside a double red rule.",
+   "layout": "vellum",
+   "image": "covers/vellum.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  },
+  "scriptorium": {
+   "title": "Scriptorium",
+   "description": "From the Scriptorium design system: vellum wash, blackletter title in iron-gall ink, rubric labels in vermilion small capitals, glosses in lapis, a gilt double rule and a type ornament. Pairs with the Scriptorium interior.",
+   "layout": "vellum",
+   "image": "covers/scriptorium.jpg",
+   "size": [
+    26.25,
+    11.75
+   ]
+  }
+ }
+}

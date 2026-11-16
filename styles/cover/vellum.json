@@ -1,0 +1,16 @@
+{
+ "title": "Vellum Title Page",
+ "layout": "vellum",
+ "emblem": "fleuron",
+ "description": "A cream cover set like an early printed title page: black and red type inside a double red rule.",
+ "palette": {
+  "ground": "#f3ead6",
+  "ground2": "#e8dcc0",
+  "title": "#1b1712",
+  "line": "#a3201b",
+  "text": "#2a241b",
+  "muted": "#5b5040",
+  "accent": "#a3201b",
+  "accent2": "#a3201b"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "title": "Scriptorium",
+ "layout": "vellum",
+ "ornament_text": "✠",
+ "fonts": {
+  "title": "'Fraktur', serif",
+  "text": "'Cardo', serif",
+  "spine": "'Fraktur', serif"
+ },
+ "description": "From the Scriptorium design system: vellum wash, blackletter title in iron-gall ink, rubric labels in vermilion small capitals, glosses in lapis, a gilt double rule and a type ornament. Pairs with the Scriptorium interior.",
+ "palette": {
+  "ground": "#F6EEDF",
+  "ground2": "#E4D5B9",
+  "title": "#1F1A14",
+  "line": "#B4862F",
+  "text": "#1F1A14",
+  "muted": "#274372",
+  "accent": "#B23A24",
+  "accent2": "#274372"
+ },
+ "css": ".kicker, .vol, .flap h3, .back .series b, .flap .sub { font-family: 'Fell English SC', serif; } .title .of { color: #B23A24; font-style: normal; } .range, .flap .small, .back .feat { color: #274372; font-family: 'Fell English', serif; } .back p.lead { color: #1F1A14; font-style: normal; } .glyph { font-family: 'Cardo', serif; font-size: 40pt; color: #B23A24; line-height: 1; } body { background-image: radial-gradient(40% 30% at 82% 88%, rgba(180,134,47,.16) 0%, rgba(180,134,47,0) 100%), radial-gradient(120% 90% at 20% 0%, rgba(255,255,255,.55) 0%, rgba(214,194,159,.28) 70%, rgba(194,170,130,.42) 100%); }"
+}

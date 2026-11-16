@@ -1,0 +1,52 @@
+/* Scriptorium: tokens from the Scriptorium Design System (tokens.json). */
+:root {
+  --ink-1: #1F1A14; --ink-3: #554738; --ink-4: #7D6B55; --vellum-1: #F6EEDF; --vellum-3: #E4D5B9; --vellum-edge: #C2AA82;
+  --vermilion-1: #B23A24; --vermilion-2: #8E2A19; --lapis-1: #274372; --verdigris-1: #3E6B58;
+  --gold-1: #B4862F; --gold-2: #8E6820; --gold-3: #DCB25C; --text-on-pigment: #F7F0E1; --rule-plummet: #B9A9D1;
+  --body-font: 'Cardo', 'Fell English', serif; --head-font: 'Fraktur', serif; --display-font: 'Fraktur', serif;
+  --rubric-font: 'Fell English SC', serif; --gloss-font: 'Fell English', serif;
+  /* type-body 18px / 1.62 on screen; the printed page sets it at 11pt on the same leading */
+  --size: 11pt; --leading: 1.62; --ink: var(--ink-1); --muted: var(--ink-3); --faint: var(--vellum-edge);
+  --rubric: var(--vermilion-1); --accent: var(--vermilion-1); --gold: var(--gold-2); --slate: var(--lapis-1);
+  --h1-size: 26pt; --h2-size: 18pt; --h3-size: 11pt; --para-gap: .55em;
+}
+h1.chapter { color: var(--ink-1); border-bottom: none; letter-spacing: .01em; line-height: 1.2; margin: .3in 0 .3em; }
+h1.chapter::after { content: "❧"; display: block; font-family: var(--body-font); font-size: 14pt; color: var(--vermilion-1); margin-top: .12in; }
+h2 { font-family: var(--display-font); font-variant: normal; font-weight: normal; letter-spacing: .01em; color: var(--ink-1); line-height: 1.2; }
+h3 { font-family: var(--rubric-font); font-weight: normal; text-transform: uppercase; letter-spacing: .14em; color: var(--vermilion-1); }
+h4 { font-family: var(--gloss-font); color: var(--lapis-1); font-weight: normal; }
+h2.doc-title .doc-latin { font-style: normal; }
+h2.doc-title .doc-kind, .canons-label, .box-label, .contents tr.back td, .qa .q .qn, .canons .canon-num, .lbl, .a-num, .q-num {
+  font-family: var(--rubric-font); font-variant: normal; text-transform: uppercase; letter-spacing: .14em; font-weight: normal; color: var(--vermilion-1); }
+.part-sub, .chapter-sub, .doc-promulgation, .source, .source-note, .back-note, figcaption, .ed-note {
+  font-family: var(--gloss-font); font-style: italic; color: var(--lapis-1); letter-spacing: .02em; }
+.notes { font-family: var(--gloss-font); color: var(--lapis-1); border-top: 3px double var(--ink-3); }
+.intro { border-left: none; border-top: 1px solid var(--vellum-edge); border-bottom: 1px solid var(--vellum-edge); padding: .5em 0; color: var(--ink-1); }
+.intro .box-label { color: var(--lapis-1); }
+.canons, .anathemas { border-left: 1px solid var(--vermilion-1); }
+.creed { border-left: 1px solid var(--gold-1); }
+.creed .box-label { color: var(--gold-2); }
+.box { border: 1px solid var(--vellum-edge); border-radius: 2px; padding: .6em .8em; }
+hr.sep { border: none; text-align: center; width: auto; }
+hr.sep::after { content: "⁂"; color: var(--vermilion-1); font-family: var(--body-font); }
+.pair .en, .pair .right { border-left-color: var(--vellum-edge); }
+sup, .ref { color: var(--lapis-1); }
+
+/* the drop cap (DropCap, tone gilt by default): blackletter, three lines deep, on a gold ground with a hairline gilt ring */
+.initial { font-family: 'Fraktur', serif; font-size: 3.4em; line-height: 1.12em; width: 1.18em; height: 1.18em; text-align: center;
+  margin: .06em .14em 0 0; background: var(--gold-3); color: var(--ink-1); border: 1px solid var(--gold-2); border-radius: 1px;
+  box-shadow: 1px 1px 0 rgba(142,104,32,.35); }
+body[data-opt-initial="vermilion"] .initial { background: var(--vermilion-1); color: var(--text-on-pigment); border-color: var(--vermilion-2); box-shadow: none; }
+body[data-opt-initial="lapis"] .initial { background: var(--lapis-1); color: var(--text-on-pigment); border-color: #1A2F53; box-shadow: none; }
+p.has-initial::first-line { font-family: var(--rubric-font); letter-spacing: .06em; }
+
+.title-page .t1 { font-family: var(--display-font); font-size: 44pt; color: var(--ink-1); letter-spacing: .01em; }
+.title-page .t2 { font-family: var(--rubric-font); font-variant: normal; text-transform: uppercase; letter-spacing: .14em; color: var(--vermilion-1); font-size: 13pt; }
+.title-page .t3 { font-family: var(--gloss-font); color: var(--lapis-1); }
+.title-page .t-ornament::after { content: "✠"; display: block; font-family: var(--body-font); font-size: 18pt; color: var(--vermilion-1); margin-top: .3in; }
+.contents h2 { font-size: 24pt; }
+.contents td.pg { font-family: var(--rubric-font); color: var(--vermilion-1); letter-spacing: .08em; }
+.back-title { border-bottom: none; color: var(--ink-1); }
+.back-title::after { content: "❧"; display: block; font-size: 13pt; color: var(--vermilion-1); font-family: var(--body-font); margin-top: .1in; }
+.index-body h3 { font-family: var(--rubric-font); color: var(--vermilion-1); }
+.cols { column-rule-color: var(--vellum-edge); column-gap: .36in; }

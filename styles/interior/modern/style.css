@@ -1,0 +1,23 @@
+:root { --body-font: 'Pagella', serif; --head-font: 'Source Sans', sans-serif; --size: 10.5pt; --leading: 1.5;
+        --accent: #1d6a73; --gold: #1d6a73; --slate: #5c6670; --justify: left; --h1-align: left; --h1-size: 26pt; }
+body[data-opt-accent="rust"] { --accent: #a4472a; --gold: #a4472a; }
+body[data-opt-accent="graphite"] { --accent: #333; --gold: #333; }
+p { hyphens: auto; }
+h1.chapter { font-weight: 600; border-bottom: none; margin-top: 1.1in; padding-bottom: 0; letter-spacing: -.01em; }
+h1.chapter::before { content: ""; display: block; width: .9in; border-top: 4pt solid var(--accent); margin-bottom: .25in; }
+h2 { font-variant: normal; letter-spacing: 0; text-align: left; font-weight: 600; color: var(--accent); }
+h3 { font-weight: 600; }
+h2.doc-title { text-align: left; }
+.title-page { text-align: left; padding-top: 2.6in; }
+.title-page .t1, .title-page .t2, .title-page .t3, .title-page .t-author { text-align: left; font-family: var(--head-font); }
+.title-page .t1 { font-size: 34pt; font-weight: 600; line-height: 1.05; }
+.title-page .t2 { font-variant: normal; text-transform: uppercase; letter-spacing: .16em; color: var(--accent); font-size: 12pt; }
+.title-page .t-ornament { width: 1.2in; border-top: 5pt solid var(--accent); margin-top: .3in; }
+.contents h2 { text-align: left; }
+.contents td { font-family: var(--head-font); }
+.box { border-left: 3pt solid var(--accent); background: color-mix(in srgb, var(--accent) 6%, white); padding: .5em .8em; }
+.box .box-label { color: var(--accent); font-family: var(--head-font); font-variant: normal; text-transform: uppercase; letter-spacing: .1em; font-size: .85em; }
+.steps > li::before { font-family: var(--head-font); background: var(--accent); color: #fff; border-radius: 50%;
+                      width: 1.45em; height: 1.45em; line-height: 1.45em; text-align: center; font-size: .85em; top: .05em; }
+figcaption { font-family: var(--head-font); font-style: normal; }
+.back-title { text-align: left; font-family: var(--head-font); font-weight: 600; border-bottom: none; }

@@ -1,0 +1,158 @@
+# Glossary additions for the Summa Theologica volumes.
+# Use together with glossary.txt (the councils glossary); entries here replace any with the same name:
+#   --glossary glossary.txt --glossary summa_glossary.txt
+# Same format: term, optional "match:" line, then the definition; blank line between entries.
+# A volume's glossary includes an entry only if the term appears in that volume.
+# These definitions are editorial (not part of St Thomas's text); edit them freely.
+
+Accident
+match: accident | accidents | accidental*
+That which exists in another as in a subject, not in itself: such as quantity, quality, relation, place or time. Contrasted with substance.
+
+Act and potency
+match: in act | in potentiality | potentiality | actuality | pure act
+Potency (potentiality) is the capacity to be or to become something; act (actuality) is its realization. God, having no potentiality at all, is "pure act".
+
+Analogy
+match: analog* | univocal* | equivocal*
+The way a word is said of different things in a sense partly the same and partly different. St Thomas holds that names are said of God and creatures neither univocally (in exactly the same sense) nor purely equivocally (in unrelated senses), but analogically.
+
+Appetite
+match: appetite* | appetitive
+An inclination toward a good. The intellectual appetite is the will; the sensitive appetite is divided into the concupiscible and the irascible.
+
+Article
+match: =Article | =article
+The basic unit of the Summa: a single question ("Whether…?") answered in a fixed order of objections, "On the contrary", "I answer that" and replies to the objections.
+
+Beatitude
+match: beatitude* | beatific
+Perfect happiness, which St Thomas identifies with the vision of the divine essence.
+
+Commentator, the
+match: =Commentator | Averroes
+Averroes (Ibn Rushd, 1126–1198), the great Arabic commentator on Aristotle.
+
+Concupiscible and irascible
+match: concupiscible | irascible
+The two powers of the sensitive appetite: the concupiscible tends to sensible good and away from evil simply; the irascible meets good or evil that is difficult or arduous to obtain or avoid.
+
+Contingent
+match: contingent* | contingency
+That which can be or not be. Contrasted with what is necessary.
+
+Damascene
+match: Damascene
+St John of Damascus (c. 675–749), Greek theologian whose De Fide Orthodoxa St Thomas cites often.
+
+Dionysius
+match: Dionysius
+The author of works written under the name of Dionysius the Areopagite (c. 500), On the Divine Names, The Celestial Hierarchy and others, much cited on God and the angels.
+
+Efficient, final, formal and material causes
+match: efficient cause* | final cause* | formal cause* | material cause* | exemplar cause*
+Aristotle's four causes: the agent that produces something (efficient), the end for which it is done (final), what makes it the kind of thing it is (formal), and that out of which it is made (material). St Thomas adds the exemplar cause, the idea after which a thing is made.
+
+Esse
+match: esse | act of being | act of existence
+The act of existing. In God essence and esse are identical; in every creature they are distinct.
+
+Essence
+match: essence* | quiddity | whatness
+What a thing is; that by which it belongs to its species.
+
+Form and matter
+match: =form | substantial form* | prime matter | primary matter | hylomorph*
+The two principles of a bodily substance: matter is the potential, determinable principle; form is the actual, determining principle that makes it what it is. The human soul is the substantial form of the body.
+
+Habit
+match: habit | habits | habitus
+A stable quality disposing a power to act well or badly, such as a virtue or a vice.
+
+I answer that
+match: I answer that | respondeo
+The body of an article (Latin respondeo dicendum), in which St Thomas gives his own solution.
+
+Intelligible species
+match: intelligible species | species
+A likeness of a thing abstracted from sense images (phantasms) by the agent intellect, by which the intellect understands the thing.
+
+Master, the
+match: =Master | Master of the Sentences | Lombard
+Peter Lombard (c. 1100–1160), author of the Sentences, the standard theological textbook of the Middle Ages.
+
+Notional acts
+match: notion* | notional
+Acts or properties by which the divine Persons are distinguished: such as innascibility, paternity, filiation, spiration and procession.
+
+Objection
+match: Objection
+An argument against the position St Thomas will defend, stated at the start of each article and answered at its end.
+
+On the contrary
+match: On the contrary | sed contra
+A short argument from authority (Latin sed contra) indicating the position that St Thomas will defend.
+
+Per se and per accidens
+match: per se | per accidens | accidentally
+Belonging to something of itself or by its nature (per se), as against belonging to it incidentally or through something else (per accidens).
+
+Phantasm
+match: phantasm*
+A sense image produced by the imagination, from which the intellect abstracts intelligible species.
+
+Philosopher, the
+match: =Philosopher | Aristotle
+Aristotle (384–322 BC), whom St Thomas cites simply as "the Philosopher".
+
+Powers of the soul
+match: powers of the soul | power of the soul | vegetative | sensitive | intellective
+The faculties through which the soul acts: vegetative (nutrition, growth, reproduction), sensitive (the senses and sense appetite), and intellectual (intellect and will).
+
+Precept
+match: precept*
+A command of law. St Thomas distinguishes the moral, ceremonial and judicial precepts of the Old Law.
+
+Privation
+match: privation*
+The absence of something that ought to be present. Evil, for St Thomas, is a privation of good, not a positive thing.
+
+Quodlibet
+match: quodlibet*
+A disputation in which a master answered questions on any subject put by those present; also the written record of such disputations.
+
+Reply to Objection
+match: Reply to Objection
+The answers at the end of each article, in which St Thomas resolves each objection in the light of his solution.
+
+Science (scientia)
+match: =science | sciences | scientific knowledge
+Certain knowledge through causes, reached by demonstration. Sacred doctrine is a science because it proceeds from principles known by revelation.
+
+Spiration
+match: spiration | spirated
+The act by which the Father and the Son breathe forth the Holy Ghost.
+
+Subsistence and suppositum
+match: suppositum | supposit* | subsistence | subsist*
+A suppositum is a complete individual substance existing on its own; a person is a suppositum of a rational nature. In Christ there is one suppositum, the divine Word, in two natures.
+
+Substance
+match: substance | substances | substantial
+That which exists in itself and not in another. Contrasted with accident.
+
+Synderesis
+match: synderesis
+The natural habit by which the first principles of moral action are known, such as "good is to be done and evil avoided".
+
+Treatise
+match: treatise
+A group of questions on one subject, such as the Treatise on Law or the Treatise on the Incarnation.
+
+Ubi
+match: =ubi
+"Where": the category of place.
+
+Viator and comprehensor
+match: wayfarer* | comprehensor* | viator*
+A wayfarer (viator) is someone still on the way to God in this life; a comprehensor is one who has reached the end and sees God. St Thomas holds that Christ was both at once.

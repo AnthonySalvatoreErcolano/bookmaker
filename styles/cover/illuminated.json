@@ -1,0 +1,21 @@
+{
+ "title": "Illuminated",
+ "layout": "illuminated",
+ "tint": true,
+ "fonts": {
+  "title": "'Fraktur', serif",
+  "text": "'Fell', serif",
+  "spine": "'Fraktur', serif"
+ },
+ "description": "Vellum ground with a painted bar-and-ivy border, a gilded initial and blackletter title in red and blue. Pairs with the Illuminated Manuscript interior.",
+ "palette": {
+  "ground": "#f3e9d2",
+  "ground2": "#e2d0a8",
+  "title": "#a3201b",
+  "line": "#b8892c",
+  "text": "#2a1d12",
+  "muted": "#6b5640",
+  "accent": "#a3201b",
+  "accent2": "#1f3f8f"
+ }
+}

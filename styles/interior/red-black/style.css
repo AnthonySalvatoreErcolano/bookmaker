@@ -1,0 +1,11 @@
+:root { --body-font: 'EB Garamond', serif; --size: 11pt; --leading: 1.32; --rubric: #b0201c;
+        --accent: #b0201c; --gold: #b0201c; --slate: #6a5a50; --faint: #c99; }
+body[data-opt-rubric="black"] { --rubric: #111; --accent: #111; --gold: #333; }
+h1.chapter { color: var(--rubric); font-variant: small-caps; letter-spacing: .06em; border-bottom: .6pt solid var(--rubric); }
+h2, h3 { color: var(--rubric); }
+h2.doc-title .doc-latin { color: var(--rubric); }
+.title-page .t1 { color: var(--rubric); }
+.title-page .t-ornament { width: 1.6in; margin: .3in auto 0; border-top: .8pt solid var(--rubric); border-bottom: .8pt solid var(--rubric); height: 3pt; }
+.initial { color: var(--rubric); font-size: 3.3em; }
+.contents a { color: var(--ink); }
+.contents tr:not(.sub) td:first-child { font-variant: small-caps; letter-spacing: .04em; }

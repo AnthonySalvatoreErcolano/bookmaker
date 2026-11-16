@@ -1,0 +1,262 @@
+# Glossary additions for the "Documents of the Popes" volumes.
+# Use together with glossary.txt (the councils glossary); entries here replace any with the same name:
+#   --glossary glossary.txt --glossary papal_glossary.txt
+# Same format: term, optional "match:" line, then the definition; blank line between entries.
+# A volume's glossary includes an entry only if the term appears in that volume.
+# These definitions are editorial (not part of the papal texts); edit them freely.
+
+Americanism
+match: Americanism
+A set of tendencies attributed to some Catholics in the United States in the 1890s, such as adapting doctrine to modern culture and preferring active to contemplative virtues. Leo XIII warned against them in the letter Testem Benevolentiae (1899).
+
+Angelus
+match: Angelus
+A prayer recalling the Incarnation, traditionally said morning, noon and evening. On Sundays the pope leads it from a window overlooking St Peter's Square, usually after a short address. During Eastertide the Regina Caeli is said instead.
+
+Apostolic Benediction
+match: Apostolic Benediction | apostolic blessing
+The blessing given by the pope, usually at the end of a document, an audience or a message.
+
+Apostolic constitution
+match: apostolic constitution*
+A solemn papal document used for the most important acts of legislation and doctrine, such as establishing dioceses, promulgating a code of law or defining a dogma.
+
+Apostolic exhortation
+match: apostolic exhortation* | post-synodal
+A papal document encouraging the faithful on a particular subject. Since 1975 many have followed a Synod of Bishops ("post-synodal apostolic exhortations").
+
+Apostolic letter
+match: apostolic letter*
+A papal letter addressed to the Church or to particular groups, often on an anniversary or a particular question. It ranks below an encyclical in solemnity.
+
+Assumption
+match: Assumption
+The doctrine that Mary, at the end of her earthly life, was taken up body and soul into heavenly glory. Defined by Pius XII in Munificentissimus Deus (1950).
+
+Atheistic communism
+match: communis* | Marxis*
+Communism as a political and economic system founded on Marxist materialism. Condemned by Pius XI in Divini Redemptoris (1937) and opposed repeatedly by his successors.
+
+Beatification and canonization
+match: beatif* | canoniz* | canonis*
+The processes by which the Church declares that a deceased person lived a life of heroic virtue. Beatification permits public veneration as "Blessed" in particular places; canonization declares a person a saint for the whole Church.
+
+Catholic Action
+match: Catholic Action
+The organized participation of the laity in the apostolate of the hierarchy, promoted especially by Pius XI.
+
+Common good
+match: common good
+The sum of social conditions that allow people, as groups and as individuals, to reach their fulfilment more fully and more easily. A central principle of Catholic social teaching.
+
+Concordat
+match: concordat*
+A formal agreement between the Holy See and a state, regulating matters such as the freedom of the Church, the appointment of bishops and religious education.
+
+Conclave
+match: conclave*
+The meeting of the cardinals, held in seclusion, to elect a new pope.
+
+Consistory
+match: consistor*
+A formal meeting of the College of Cardinals with the pope, held for example to create new cardinals or to approve canonizations.
+
+Culture of death
+match: culture of death
+John Paul II's phrase, especially in Evangelium Vitae (1995), for social attitudes and structures that accept attacks on human life such as abortion and euthanasia; opposed to a "culture of life".
+
+Dicastery
+match: dicaster*
+A department of the Roman Curia, such as a congregation, council or, since 2022, a dicastery in the strict sense.
+
+Doctor of the Church
+match: Doctor of the Church | Doctors of the Church | doctor of the universal Church
+A title given to saints whose teaching is recognized as especially valuable to the whole Church, such as Augustine, Thomas Aquinas and Thérèse of Lisieux.
+
+Encyclical
+match: encyclical*
+A circular letter from the pope, traditionally addressed to the bishops and through them to the whole Church (and, since John XXIII, often to "all people of good will"). Encyclicals are the main vehicle of papal teaching on doctrine and morals and are customarily known by their first Latin words.
+
+Enlightenment
+match: Enlightenment
+The 17th- and 18th-century intellectual movement that emphasized the autonomy of human reason; often discussed in papal documents in relation to faith, rationalism and secularism.
+
+Freemasonry
+match: Freemason* | Masonic | Masonry
+A fraternal society with secret rituals that originated in 18th-century Britain. Popes from Clement XII onward condemned membership; Leo XIII's Humanum Genus (1884) is the fullest treatment.
+
+Gnosticism and Pelagianism
+match: gnostic* | Pelagian* | neo-Pelagian*
+Ancient heresies, revived by Pope Francis as names for two modern temptations: reducing faith to private knowledge or feeling (Gnosticism), and trusting in one's own efforts rather than grace (Pelagianism). See Gaudete et Exsultate (2018).
+
+Holy See
+match: Holy See | Apostolic See
+The pope together with the offices of the Roman Curia that assist him in governing the universal Church. It is a sovereign entity in international law, distinct from the Vatican City State.
+
+Holy Year
+match: Holy Year | jubilee*
+A year of special grace and pilgrimage proclaimed by the pope, ordinarily every 25 years, with extraordinary jubilees on special occasions; also called a Jubilee.
+
+Humanism, integral
+match: integral humanism | true humanism | new humanism | humanism
+A humanism that is open to God and to the whole person: the phrase was used by Paul VI in Populorum Progressio (1967), contrasting it with a closed humanism that excludes God.
+
+Immaculate Conception
+match: Immaculate Conception
+The doctrine that Mary was preserved from original sin from the first moment of her conception. Defined by Pius IX in 1854.
+
+Inculturation
+match: inculturat*
+The process by which the Gospel takes root in a culture, both expressing itself in that culture's forms and transforming it.
+
+Indifferentism
+match: indifferentism | religious indifference
+The view that all religions are equally true or that it makes no difference which one a person holds. Condemned by 19th-century popes.
+
+Integral ecology
+match: integral ecology | common home
+Pope Francis's term, in Laudato Si' (2015), for an approach that treats environmental, economic, social and cultural questions as inseparable.
+
+Integral human development
+match: integral human development | development of peoples | integral development
+Development of the whole person and of all people, spiritual and moral as well as economic. Associated with Paul VI's Populorum Progressio (1967) and Benedict XVI's Caritas in Veritate (2009).
+
+Kingship of Christ
+match: Christ the King | Kingship of Christ | kingdom of Christ | reign of Christ
+The teaching that Christ rules over individuals and societies. Pius XI instituted the feast of Christ the King in Quas Primas (1925).
+
+Laicism
+match: laicism | laicis* | laicité
+The exclusion of religion from public and political life, as distinct from a legitimate separation of Church and State.
+
+Lateran Treaty
+match: Lateran Treat* | Lateran Pacts | Lateran Agreement*
+The 1929 agreements between the Holy See and Italy that settled the "Roman Question", created the Vatican City State and included a concordat.
+
+Liberalism
+match: liberalism | liberal*
+In 19th-century papal documents, chiefly the philosophical and political doctrine that places human freedom and reason above divine law and seeks to remove the Church from public life; distinct from later political uses of the word.
+
+Modernism
+match: modernis*
+A movement around 1900 that sought to reinterpret Catholic doctrine in the light of modern philosophy, history and biblical criticism, treating dogmas as evolving expressions of religious experience. Condemned by Pius X in Lamentabili and Pascendi (1907).
+
+Motu proprio
+match: motu proprio
+"On his own initiative": a document issued by the pope personally, usually to make or change church law.
+
+Mystical Body
+match: Mystical Body
+The Church understood as the body of which Christ is the head; the subject of Pius XII's Mystici Corporis Christi (1943).
+
+Natural law
+match: natural law | natural moral law
+The moral law written in human nature and knowable by reason, which papal teaching presents as the common basis for ethics and civil law.
+
+New Evangelization
+match: new evangeliz* | new evangelis*
+Proclaiming the Gospel anew, especially in traditionally Christian countries where faith has weakened; a theme of John Paul II, Benedict XVI and Francis.
+
+Nuncio
+match: nuncio* | apostolic delegate*
+A diplomatic representative of the Holy See to a state, usually with the rank of archbishop.
+
+Pontiff
+match: Pontiff | Roman Pontiff | Supreme Pontiff
+A title of the pope (from the Latin pontifex, "bridge-builder"), as in "Roman Pontiff" or "Supreme Pontiff".
+
+Preferential option for the poor
+match: preferential option for the poor | preferential love for the poor | option for the poor
+The principle that Christians, and society, must give special attention and priority to the poor.
+
+Rationalism
+match: rationalis*
+The view that human reason alone is the source of all knowledge and the judge of all truth, excluding divine revelation. Condemned by Pius IX and Vatican I.
+
+Regina Caeli
+match: Regina Caeli | Regina Coeli
+"Queen of Heaven": an Easter antiphon to Mary, said in place of the Angelus from Easter to Pentecost.
+
+Relativism
+match: relativis* | dictatorship of relativism
+The view that there is no objective truth, especially in morals; a frequent theme of John Paul II and Benedict XVI.
+
+Roman Question
+match: Roman Question
+The dispute between the Holy See and the Kingdom of Italy after the loss of the Papal States (1870), settled by the Lateran Treaty in 1929.
+
+Rosary
+match: Rosary
+A Marian prayer of repeated Hail Marys arranged in decades while meditating on events (mysteries) in the life of Christ and Mary. Leo XIII wrote many encyclicals on it; John Paul II added the Luminous Mysteries in 2002.
+
+Sacred Heart
+match: Sacred Heart | Heart of Jesus | Divine Heart
+Devotion to the heart of Jesus as the symbol of his love; the subject of encyclicals by Leo XIII (Annum Sacrum), Pius XI, Pius XII (Haurietis Aquas) and Francis (Dilexit Nos).
+
+Secularism
+match: secularis* | secularization
+The organization of society and personal life as if God did not exist; distinguished in papal teaching from the legitimate autonomy of earthly realities.
+
+Sede vacante
+match: sede vacante | vacancy of the Apostolic See | vacant see
+"The see being vacant": the period between the death or resignation of a pope and the election of his successor.
+
+Sensus fidei
+match: sensus fidei | sensus fidelium | sense of the faith | supernatural sense of faith
+The instinct for the truth of the faith that the Holy Spirit gives to the whole body of the faithful.
+
+Servant of the servants of God
+match: Servant of the Servants of God | Servus servorum Dei
+A traditional title of the pope, used at the head of solemn documents, first adopted by Gregory the Great.
+
+Social doctrine
+match: social doctrine | social teaching | social question
+The body of Catholic teaching on economic, political and social life, developed from Leo XIII's Rerum Novarum (1891) onward.
+
+Socialism
+match: socialis*
+In papal documents, chiefly the 19th- and 20th-century movements that sought to abolish private property and organize society around class struggle; Rerum Novarum (1891) and Quadragesimo Anno (1931) reject it.
+
+Solidarity
+match: solidarity
+A firm and persevering commitment to the common good, grounded in the unity of the human family; a key principle of Catholic social teaching, developed especially by John Paul II.
+
+Subsidiarity
+match: subsidiar*
+The principle that a larger community should not take over what a smaller one, or an individual, can do, but should support it. Formulated in Pius XI's Quadragesimo Anno (1931).
+
+Synodality
+match: synodal*
+"Walking together": Pope Francis's term for a Church in which all the baptized take part in discernment and mission, especially through synods at every level.
+
+Theology of the Body
+match: Theology of the Body | language of the body | spousal meaning of the body
+John Paul II's teaching on human love, sexuality and marriage, developed in his general audiences of 1979–1984.
+
+Thomism
+match: Thomism | Thomist* | scholastic* | Angelic Doctor
+The philosophy and theology of St Thomas Aquinas and his school, which Leo XIII's Aeterni Patris (1879) commended as the basis of Catholic education.
+
+Totalitarianism
+match: totalitarian*
+Systems of government that claim total control over society and the individual, such as Nazism and Soviet communism; criticized by Pius XI, Pius XII and later popes.
+
+Universal destination of goods
+match: universal destination of goods | universal purpose of created things | goods of creation are destined for all
+The principle that the goods of the earth are meant for the benefit of all people, which private property must serve.
+
+Urbi et Orbi
+match: Urbi et Orbi
+"To the city and to the world": the pope's solemn blessing given from the balcony of St Peter's at Christmas, at Easter and after his election.
+
+Venerable Brethren
+match: Venerable Brethren
+The traditional form of address with which encyclicals and other letters to the bishops begin.
+
+World Day of Peace
+match: World Day of Peace
+A day of prayer for peace on 1 January, instituted by Paul VI in 1968; each year the pope issues a message for it.
+
+World Youth Day
+match: World Youth Day | World Youth Days
+A gathering of young people with the pope, begun by John Paul II in 1985 and held internationally every few years.

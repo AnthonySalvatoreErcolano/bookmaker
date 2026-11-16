@@ -1,0 +1,152 @@
+# Glossary for the Latin–English Missal volumes.
+# Same format as glossary.txt: term, optional "match:" line, then the definition; blank line between entries.
+# A volume's glossary includes an entry only if the term appears in that volume.
+# These definitions are editorial; edit them freely.
+
+Alleluia
+match: Alleluia | Allelúja | Allelúia
+A Hebrew acclamation, "Praise ye the Lord". In the Mass it follows the Gradual outside Septuagesima and Lent; in Eastertide it is added to many chants and replaces the Gradual with a double Alleluia.
+
+Antiphon
+match: antiphon* | =Ant.
+A short text sung before and after a psalm or verse. The Introit, Offertory and Communion are antiphons.
+
+Canon
+match: =Canon | Canon Missæ | Canon of the Mass
+The fixed central prayer of the Roman Mass, from the Te igitur to the doxology before the Pater noster, within which the Consecration takes place.
+
+Classes (I–IV)
+match: I. classis | II. classis | III. classis | IV. classis | first class | second class | third class | fourth class
+The ranking of liturgical days introduced by the Code of Rubrics of 1960, replacing the older grades of double, semidouble and simple.
+
+Collect
+match: Collect | =Oratio
+The principal prayer of the day, said by the priest after the Gloria (or the Kyrie), "collecting" the prayers of the people.
+
+Commemoration
+match: commemorat* | =Commemoratio
+A second or further Collect, Secret and Postcommunion added on a day when another feast or season also falls, so that it is remembered though its own Mass is not said.
+
+Common
+match: =Commune | =Common | Commune Sanctorum
+A Mass written for a class of saints (Apostles, Martyrs, Confessors, Virgins and so on), used for saints who have no complete Mass of their own.
+
+Communion
+match: =Communio | Communion
+The antiphon sung during or after the distribution of Holy Communion.
+
+Confiteor
+match: Confiteor | Confíteor
+The general confession of sins made at the foot of the altar and, in the older rubrics, before Holy Communion.
+
+Credo
+match: Credo | Nicene Creed
+The Nicene Creed, said after the Gospel on Sundays, on feasts of the first class and on certain other days.
+
+Divino Afflatu
+match: Divino Afflatu
+The apostolic constitution of St Pius X (1911) that reformed the Breviary and with it the rubrics of the Missal.
+
+Double, semidouble, simple
+match: =Duplex | Semiduplex | =Simplex | double of the first class | double of the second class | greater double | semidouble
+The older grades of liturgical days before 1960, deciding which day's Mass is said when two coincide: duplex I. or II. classis, duplex majus, duplex, semiduplex and simplex.
+
+Ember days
+match: Ember* | Quattuor Temporum | Quatuor Temporum
+The Wednesday, Friday and Saturday of four weeks of the year (in Advent, in Lent, after Pentecost and in September), kept with fasting and prayer and, on the Saturday, with several lessons.
+
+Epistle
+match: Epistle | Epístola | Lectio
+The first reading of the Mass, usually from the letters of the Apostles, read from the south side of the altar.
+
+Feria
+match: =Feria | ferial | ferias
+A weekday on which no feast is kept. In the older rubrics the Mass of a feria with no proper Mass is that of the preceding Sunday.
+
+Gloria
+match: =Gloria | Glória in excélsis | Gloria in excelsis
+The hymn "Glory to God in the highest", said after the Kyrie on Sundays outside Advent and Septuagesima to Lent, on feasts and in their octaves.
+
+Gospel
+match: =Evangelium | =Gospel
+The reading from the Gospels, the climax of the Mass of the Catechumens, read from the north side of the altar.
+
+Gradual
+match: =Graduale | Gradual
+The chant between the Epistle and the Gospel, originally sung from the steps (gradus) of the ambo.
+
+Holy Week (restored)
+match: Ordo Hebdomadæ Sanctæ | restored Holy Week | Instaurata
+The reformed rites of Holy Week issued in 1955 (Maxima Redemptionis), with the Easter Vigil restored to the night; earlier versions keep the older rites.
+
+Introit
+match: =Introitus | Introit
+The entrance chant of the Mass: an antiphon, a psalm verse and the Gloria Patri, with the antiphon repeated.
+
+Kyrie
+match: Kyrie | Kýrie
+The ninefold "Lord, have mercy; Christ, have mercy; Lord, have mercy".
+
+Last Gospel
+match: Last Gospel | Initium sancti Evangelii secundum Joannem | In princípio erat Verbum
+The beginning of St John's Gospel, read at the end of Mass; on certain days another Gospel was read instead before 1960.
+
+Octave
+match: octav* | =Octava
+The eight-day prolongation of a great feast, ending with the octave day. Most octaves were suppressed in 1955.
+
+Offertory
+match: =Offertorium | Offertory
+The antiphon said as the bread and wine are offered, and by extension the offering prayers themselves.
+
+Order of Mass
+match: Ordo Missæ | Order of Mass | Ordinary of the Mass
+The unchanging parts of the Mass, into which the proper texts of the day are inserted.
+
+Postcommunion
+match: Postcommunio | Postcommunion
+The prayer said after Holy Communion, answering the Collect and the Secret.
+
+Preface
+match: =Præfatio | =Prefatio | Preface | Præfátio
+The solemn thanksgiving that opens the Canon, ending with the Sanctus. Proper prefaces are said on certain feasts and seasons.
+
+Proper
+match: =Proprium | Proper of the Season | Proper of the Saints | Proprium de Tempore | Proprium Sanctorum
+The texts that change from day to day (Introit, Collect, Epistle, Gradual, Gospel, Offertory, Secret, Communion, Postcommunion). The Proper of the Season follows the liturgical year; the Proper of the Saints follows the calendar.
+
+Rogation days
+match: Rogation* | Litaniæ majores | Litaniæ minores
+Days of supplication, with a procession and the Litany of the Saints: St Mark's day (the Greater Litanies) and the three days before the Ascension (the Lesser Litanies).
+
+Rubric
+match: rubric*
+A direction for the conduct of the rite, printed in red (ruber) to distinguish it from the words to be said.
+
+Secret
+match: =Secreta | =Secret
+The prayer over the offerings, said silently by the priest before the Preface.
+
+Septuagesima
+match: Septuagesim* | Sexagesim* | Quinquagesim*
+The three Sundays before Lent and the weeks they begin, a time of preparation in which the Gloria and the Alleluia are no longer said.
+
+Sequence
+match: =Sequentia | Sequence
+A rhymed hymn sung after the Alleluia on certain days: Victimae paschali (Easter), Veni Sancte Spiritus (Pentecost), Lauda Sion (Corpus Christi), Stabat Mater (the Seven Sorrows) and Dies irae (Masses for the dead).
+
+Station
+match: Statio | =Station
+The Roman church where the Pope and people once gathered for the Mass of the day, noted at the head of many Masses of Lent and other seasons.
+
+Tract
+match: =Tractus | =Tract
+Verses of a psalm sung without refrain after the Gradual, in place of the Alleluia, from Septuagesima to Easter and in Masses for the dead.
+
+Vigil
+match: Vigil* | =Vigilia
+The day before a great feast, kept as a day of preparation, often with its own Mass.
+
+Votive Mass
+match: votiv* | =Votiva
+A Mass said by choice, out of devotion or for a particular need, rather than the Mass of the day.

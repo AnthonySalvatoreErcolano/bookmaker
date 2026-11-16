@@ -1,0 +1,138 @@
+/* ==========================================================================
+   bookmaker components: how every documented manuscript element looks by default.
+   Each interior style sets the variables below and overrides what it wants.
+   Order in a built book: fonts → manuscript's own <style> → this file → style.css → page CSS.
+   ========================================================================== */
+:root {
+  --body-font: 'Pagella', 'Palatino Linotype', Georgia, serif;
+  --head-font: var(--body-font);
+  --display-font: var(--head-font);
+  --size: 10.5pt;
+  --leading: 1.42;
+  --ink: #111;
+  --muted: #555;
+  --faint: #999;
+  --accent: #7a1f1f;      /* canons, anathemas, strong labels */
+  --gold: #8a6d1f;        /* creeds and professions of faith */
+  --slate: #5b6670;       /* introductions, editorial notes */
+  --rubric: #b0201c;      /* rubrics and red letters */
+  --h1-size: 22pt;
+  --h1-align: center;
+  --h2-size: 1.3em;
+  --h3-size: 1.12em;
+  --para-gap: .55em;
+  --para-indent: 0;
+  --justify: justify;
+  --red: var(--rubric);   /* the missal's own name for the rubric colour */
+}
+
+html body { font-family: var(--body-font); font-size: calc(var(--size) * var(--scale, 1));
+            line-height: var(--leading); color: var(--ink);
+            -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html { font-size: calc(var(--size) * var(--scale, 1)); }
+p { text-align: var(--justify); hyphens: auto; margin: 0 0 var(--para-gap); orphans: 2; widows: 2;
+    text-indent: var(--para-indent); }
+p, li, td, dd, h2, h3, h4 { overflow-wrap: break-word; }
+li { orphans: 2; widows: 2; }
+a { color: inherit; text-decoration: none; }
+sup, .ref { font-size: .62em; line-height: 0; vertical-align: super; color: var(--muted); }
+blockquote { margin: .8em 1.6em; font-style: italic; }
+hr.sep { border: none; border-top: .5pt solid var(--faint); width: 1.5in; margin: 1.2em auto; }
+img { max-width: 100%; }
+
+/* ---- front matter ------------------------------------------------------ */
+.title-page { text-align: center; padding-top: 2.2in; break-after: page; }
+.title-page .t1 { font-family: var(--display-font); font-size: 26pt; line-height: 1.2; margin: 0 0 .35in; text-align: center; text-indent: 0; }
+.title-page .t2 { font-family: var(--head-font); font-size: 15pt; font-variant: small-caps; letter-spacing: .12em; margin: 0 0 .15in; text-align: center; text-indent: 0; }
+.title-page .t3 { font-size: 11pt; font-style: italic; color: var(--muted); text-align: center; text-indent: 0; }
+.title-page .t-author { font-size: 13pt; margin-top: .5in; text-align: center; text-indent: 0; }
+.title-page .t4 { font-size: 8.5pt; color: #666; margin-top: 2.6in; text-align: center; text-indent: 0; }
+.contents { break-before: page; }
+.contents h2 { margin-top: .3in; }
+.contents table { width: 100%; margin: .2in 0; border-collapse: collapse; }
+.contents td { padding: .05in 0; vertical-align: bottom; }
+.contents td.pg { text-align: right; width: .6in; }
+.contents tr.sub td { font-size: .86em; padding: .01in 0 .01in .25in; color: #333; }
+.contents tr.sub td.pg { padding-left: 0; }
+.contents tr.back td { padding-top: .14in; font-variant: small-caps; letter-spacing: .05em; }
+
+/* ---- headings ------------------------------------------------------------ */
+h1.chapter { break-before: page; page-break-before: always; margin: .6in 0 1.2em; padding-bottom: .4em;
+             font-family: var(--display-font); font-size: var(--h1-size); font-weight: normal;
+             text-align: var(--h1-align); letter-spacing: .02em; border-bottom: 1px solid var(--faint); line-height: 1.2; }
+h2 { font-family: var(--head-font); font-size: var(--h2-size); font-variant: small-caps; letter-spacing: .08em;
+     text-align: center; font-weight: 600; margin: 2em 0 .9em; }
+h3 { font-family: var(--head-font); font-size: var(--h3-size); font-weight: 600; margin: 1.6em 0 .6em; }
+h4 { font-size: 1em; font-weight: 600; font-style: italic; margin: 1.3em 0 .5em; }
+h5, h6 { font-size: 1em; font-weight: normal; font-style: italic; margin: 1.1em 0 .4em; }
+h2, h3, h4, h5, h6 { break-after: avoid; page-break-after: avoid; }
+h2.doc-title { break-before: page; page-break-before: always; margin-top: .5in; text-align: center; font-variant: normal; letter-spacing: 0; }
+body[data-doc-start="any"] h1.chapter + h2.doc-title { break-before: auto; page-break-before: auto; margin-top: .3in; }
+.doc-title .doc-latin { display: block; font-family: var(--display-font); font-size: 1.9em; font-style: italic; font-weight: normal; margin-bottom: .35em; }
+.doc-title .doc-kind { display: block; font-size: 1.05em; font-variant: small-caps; letter-spacing: .1em; font-weight: 600; }
+.doc-promulgation { margin-top: -1em; }
+.part-sub, .chapter-sub { text-align: center; font-style: italic; color: var(--muted); margin: -.8em 0 1.6em; text-indent: 0; }
+
+/* ---- boxed sections ------------------------------------------------------ */
+.canons, .anathemas, .creed, .intro, .notes, .box { margin: 1.4em 0 1.6em; padding: .2em 0 .4em 1.1em; break-inside: auto; }
+.canons { border-left: 3px solid var(--accent); font-size: .95em; }
+.anathemas { border-left: 4px double var(--accent); font-size: .95em; }
+.creed { border-left: 3px solid var(--gold); }
+.intro { border-left: 1px solid var(--slate); font-size: .92em; color: #333; }
+.notes { border-top: 1px solid #bbb; border-left: none; padding: .6em 0 0; font-size: .8em; color: #333; }
+.box { border-left: 2px solid var(--slate); }
+.box.emphasis { border-left-color: var(--accent); }
+.box.tip { border-left: none; background: color-mix(in srgb, var(--gold) 9%, white); padding: .5em .8em; }
+.canons-label, .box-label { font-family: var(--head-font); font-variant: small-caps; letter-spacing: .12em; font-weight: 600;
+  font-size: 1.15em; margin: .3em 0 .8em; border: none; text-align: left; font-style: normal; text-indent: 0; }
+.canons .canons-label, .anathemas .box-label, .box.emphasis .box-label { color: var(--accent); }
+.creed .box-label { color: var(--gold); }
+.intro .box-label, .notes .box-label, .box .box-label { color: var(--slate); }
+.canons .canon-num { font-variant: small-caps; font-weight: bold; color: var(--accent); letter-spacing: .04em; }
+.canons ol > li::marker, .anathemas ol > li::marker { color: var(--accent); font-weight: bold; }
+.creed ol > li::marker { color: var(--gold); font-weight: bold; }
+.canons p, .canons li, .anathemas p, .anathemas li, .notes p, .notes li { text-align: left; text-indent: 0; }
+.creed p { font-style: italic; text-indent: 0; }
+
+/* ---- parallel text (two languages side by side) -------------------------- */
+.pair { display: grid; grid-template-columns: 1fr 1fr; column-gap: .22in; }
+.pair .la, .pair .left { padding-right: .02in; }
+.pair .en, .pair .right { border-left: .4pt solid #c9c9c9; padding-left: .14in; }
+.pair p { margin: 0 0 .22em; text-align: left; text-indent: 0; }
+.rub, .r { color: var(--rubric); }
+p.rub { font-style: italic; font-size: .92em; }
+
+/* ---- question and answer (catechisms) ------------------------------------- */
+.qa { margin: 0 0 .7em; break-inside: avoid; }
+.qa .q { font-weight: 600; margin: 0 0 .15em; text-align: left; text-indent: 0; }
+.qa .q .qn { color: var(--accent); font-variant: small-caps; margin-right: .35em; }
+.qa .a { margin: 0 0 0 1.2em; text-indent: 0; }
+
+/* ---- illustrations and figures ---------------------------------------------- */
+figure { margin: 1em 0; text-align: center; break-inside: avoid; }
+figcaption { font-size: .85em; font-style: italic; color: var(--muted); margin-top: .3em; }
+table.data { border-collapse: collapse; margin: .8em auto; font-size: .92em; }
+table.data th, table.data td { border-bottom: .4pt solid #bbb; padding: .2em .5em; text-align: left; }
+.steps { counter-reset: step; list-style: none; padding-left: 0; }
+.steps > li { counter-increment: step; padding-left: 2em; position: relative; margin-bottom: .5em; }
+.steps > li::before { content: counter(step); position: absolute; left: 0; font-weight: bold; color: var(--accent); }
+
+/* ---- initials (styles that set "initials": true) -------------------------- */
+.initial { float: left; font-family: var(--display-font); font-size: 3.1em; line-height: .9; margin: .04em .08em 0 0; color: var(--accent); }
+p.has-initial { text-indent: 0; }
+
+/* ---- two columns ------------------------------------------------------------ */
+.cols { columns: 2; column-gap: .28in; column-rule: .4pt solid #d0d0d0; }
+.cols h3, .cols h4 { break-after: avoid; }
+
+/* ---- back matter --------------------------------------------------------------- */
+.back-title { break-before: page; page-break-before: always; margin-top: .6in; text-align: center; font-family: var(--display-font);
+              font-size: 20pt; font-weight: normal; border-bottom: 1px solid var(--faint); padding-bottom: .15in; }
+.back-note { font-size: 8.5pt; font-style: italic; color: var(--muted); text-align: center; margin-bottom: .3in; text-indent: 0; }
+.glossary dl { margin: 0; }
+.glossary dt { font-weight: bold; margin-top: .55em; break-after: avoid; page-break-after: avoid; }
+.glossary dd { margin: .1em 0 0 1.2em; text-align: justify; hyphens: auto; }
+.index-body { columns: 2; column-gap: .3in; font-size: 8.5pt; line-height: 1.35; }
+.index-body h3 { font-size: 10pt; margin: .9em 0 .25em; font-style: normal; }
+.index-body p { margin: 0 0 .18em; padding-left: 1.2em; text-indent: -1.2em; text-align: left; hyphens: manual; }
+.index-body .see { font-style: italic; }

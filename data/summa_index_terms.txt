@@ -1,0 +1,251 @@
+# Index terms for the Summa Theologica volumes
+# Same format as index_terms.txt:
+#   Index heading | other spelling | other spelling | options
+#   "=" at the start of a variant = exact capitals; "*" at the end = any ending;
+#   see: X / see also: X for cross-references. Each volume's index only shows what occurs in it.
+# Very common words (God, grace, sin…) are given narrower forms so the entries stay useful;
+# book_print.py lists any heading that still lands on too many pages.
+
+[Authorities]
+Aristotle (the Philosopher) | =Philosopher | Aristotle
+Augustine | Augustine
+Ambrose | Ambrose
+Anselm | Anselm
+Avicenna | Avicenna
+Averroes (the Commentator) | Averroes | =Commentator
+Basil | =Basil
+Bede | =Bede
+Bernard | =Bernard
+Boethius | Boethius
+Cassian | Cassian
+Cicero (Tully) | Cicero | =Tully
+Cyril of Alexandria | =Cyril
+Damascene (John of Damascus) | Damascene
+Dionysius (the Areopagite) | Dionysius
+Gregory the Great | =Gregory
+Gregory of Nyssa | Gregory of Nyssa
+Hilary | =Hilary
+Isidore | =Isidore
+Jerome | =Jerome
+John Chrysostom | Chrysostom
+Leo the Great | =Leo
+Macrobius | Macrobius
+Origen | Origen
+Peter Lombard (the Master) | =Master of the Sentences | Lombard | =Sentences
+Plato | Plato | Platonists
+Porphyry | Porphyry
+Seneca | Seneca
+Socrates | Socrates
+Hugh of St. Victor | Hugh of St. Victor
+Richard of St. Victor | Richard of St. Victor
+Gratian (the Decretals) | Gratian | Decretals | =Decret*
+Maimonides (Rabbi Moses) | Rabbi Moses | Maimonides
+
+[Heretics and errors]
+Arius | Arian* | =Arius
+Nestorius | Nestorian*
+Eutyches | Eutychian*
+Manichees | Manichae* | Manichee*
+Pelagius | Pelagian*
+Sabellius | Sabellian*
+Photinus | Photinus
+Apollinaris | Apollinar*
+Origenists | Origenist*
+Donatists | Donatist*
+Jovinian | Jovinian
+Vigilantius | Vigilantius
+
+[God and the Trinity]
+God, existence of | existence of God | God exists | five ways
+God, simplicity of | simplicity of God | God is simple | divine simplicity
+God, eternity of | eternity | eternity of God
+God, knowledge of | God's knowledge | knowledge of God | divine knowledge
+God, will of | will of God | God's will | divine will
+God, providence of | providence
+God, omnipotence of | omnipoten* | power of God | divine power
+Names of God | names of God | divine names | analog*
+Predestination | predestin*
+Trinity | Trinity | three Persons | divine Persons
+Procession, divine | procession*
+Relations, divine | divine relations | real relation*
+Father (divine Person) | =Father | paternity
+Son (divine Person) | =Son | filiation | =Word
+Holy Ghost | Holy Ghost | Holy Spirit | Paraclete
+Image of God | image of God | God's image
+Beatific vision | vision of God | see God | seeing God | sees God | see the essence of God | vision of the divine essence
+
+[Creation, angels, man]
+Creation | creation | created from nothing | made from nothing
+Evil | nature of evil | cause of evil | evil of fault | evil of punishment | evil of pain
+Angels | angel* | =Seraphim | =Cherubim | =Thrones | heavenly spirits
+Demons | demon* | devil* | Satan
+Six days, work of | six days | work of the first day | work of distinction | work of adornment
+Soul | rational soul | intellectual soul | sensitive soul | vegetative soul | separated soul* | soul separated from the body
+Body and soul, union of | union of body and soul | soul is the form of the body
+Intellect | intellect | intellects | intellectual power
+Agent intellect | active intellect | agent intellect
+Phantasms | phantasm*
+Will (power of the soul) | the will | act of the will | object of the will
+Free-will | free-will | free will | freedom of choice
+Senses, interior and exterior | interior senses | exterior senses | common sense | imagination | memory
+Paradise | paradise
+First man, state of | state of innocence | first man | Adam | original justice
+Woman, production of | the woman | Eve
+Government of the world | divine government | government of things
+
+[Happiness and human acts]
+Happiness | happiness | last end
+Human acts | human acts | voluntary | involuntary
+Intention | intention
+Choice | choice | election
+Good and evil in acts | goodness of the act | malice of the act
+Passions | passion* | concupiscible | irascible
+Love (passion) | love is a passion | cause of love | effects of love
+Hatred | hatred
+Desire (passion) | desire | concupiscence
+Pleasure and delight | pleasure | delight
+Sorrow | sorrow | sadness
+Hope (passion) | =hope | despair
+Fear | fear
+Anger | anger | wrath
+Habits | habit* | disposition*
+Virtue, nature of | essence of virtue | definition of virtue | subject of virtue | cause of virtue
+Intellectual virtues | intellectual virtue*
+Moral virtues | moral virtue*
+Cardinal virtues | cardinal virtue*
+Theological virtues | theological virtue*
+Gifts of the Holy Ghost | gifts of the Holy Ghost | gift of
+Beatitudes | beatitudes
+Fruits of the Holy Ghost | fruits of the Holy Ghost
+Vice | vice* | vicious
+Sin, nature of | causes of sin | cause of sin | distinction of sins | subject of sin | gravity of sins
+Original sin | original sin
+Mortal and venial sin | mortal sin* | venial sin*
+
+[Law and grace]
+Law | see: Eternal law; Natural law; Human law; Old Law; New Law
+Eternal law | eternal law
+Natural law | natural law | law of nature
+Human law | human law | positive law
+Old Law | Old Law | law of Moses | Mosaic law
+Moral precepts | moral precepts
+Ceremonial precepts | ceremonial precept* | ceremonies
+Judicial precepts | judicial precept*
+New Law | New Law | law of the Gospel | Evangelical Law
+Counsels | counsel*
+Grace | sanctifying grace | gratuitous grace | prevenient grace | operating grace | cooperating grace | habitual grace | grace of the Holy Ghost
+Justification | justif*
+Merit | merit*
+
+[Faith, hope and charity]
+Faith (virtue) | act of faith | object of faith | articles of faith | virtue of faith | lifeless faith | living faith | unformed faith
+Unbelief | unbelief | unbeliever*
+Heresy | heres* | heretic*
+Apostasy | apostas* | apostate*
+Blasphemy | blasphem*
+Hope (virtue) | virtue of hope | object of hope | act of hope
+Charity | virtue of charity | act of charity | order of charity | precept of charity | charity is
+Love of God | love of God
+Love of neighbour | love of neighbour | love of our neighbour | neighbour
+Love of enemies | love of enemies | enemies
+Mercy (virtue) | mercy | merciful
+Almsgiving | almsdeed* | alms*
+Fraternal correction | fraternal correction
+Hatred, envy, discord | envy | discord | contention
+Schism | schism*
+War | war | warfare
+Sedition | sedition
+
+[Prudence, justice, fortitude, temperance]
+Prudence | prudence | prudent
+Justice | virtue of justice | legal justice | particular justice | commutative justice | distributive justice
+Right (ius) | natural right | positive right | right of nations | jus gentium
+Restitution | restitution
+Theft and robbery | theft | robbery | stealing
+Murder | murder | homicide | to kill a man | killing of
+Judicial procedure | accuser* | witnesses | advocate* | sentence of the judge
+Usury | usur*
+Buying and selling | buying | selling | fraud
+Religion | religion
+Devotion | devotion
+Prayer | prayer
+Adoration | adoration
+Sacrifice | sacrifice*
+Oaths and vows | oath* | vow*
+Tithes and oblations | tithe* | oblation* | first-fruits
+Superstition | superstition* | idolatry | divination
+Simony | simon*
+Piety | piety
+Obedience | obedience
+Gratitude | gratitude | thankfulness | ingratitude
+Truth (virtue) | truthfulness | lying | lies | dissimulation | hypocrisy | boasting
+Fortitude | fortitude | courage
+Martyrdom | martyr*
+Magnanimity | magnanim*
+Patience | patience
+Perseverance | perseverance
+Temperance | temperance
+Fasting | fasting | fasts | abstinence
+Gluttony | gluttony | drunkenness
+Chastity | chastity | virginity
+Lust | lust | fornication | adultery
+Meekness | meekness | clemency
+Humility | humility
+Pride | pride
+Studiousness and curiosity | studiousness | curiosity
+Prophecy | prophec* | prophet*
+Rapture | rapture
+Active and contemplative life | active life | contemplative life | contemplation
+States of life | state of perfection | religious state | religious life
+Bishops | bishop* | episcopal
+
+[Christ]
+Incarnation | incarnat*
+Hypostatic union | hypostatic union | union of the Word | union in the Person
+Christ's knowledge | knowledge of Christ | Christ's knowledge | soul of Christ
+Christ's grace | grace of Christ | grace of union | capital grace | Head of the Church
+Christ's priesthood | priesthood of Christ | Christ is a priest
+Mary, Mother of God | Blessed Virgin | Mother of God | Virgin Mary | Mother of Christ
+Sanctification of the Blessed Virgin | sanctification of the Blessed Virgin | sanctified in the womb
+Joseph | =Joseph
+John the Baptist | John the Baptist | Baptist
+Baptism of Christ | baptism of Christ | Christ's baptism | baptized by John
+Temptation of Christ | temptation of Christ | Christ was tempted
+Miracles of Christ | miracles of Christ | Christ's miracles | miracle*
+Transfiguration | transfigur*
+Passion of Christ | =Passion | Christ's Passion | death of Christ | Christ's death | the cross
+Descent into hell | descent into hell | descended into hell | limbo
+Resurrection of Christ | Christ's resurrection | resurrection of Christ | Christ rose
+Ascension | ascension
+Christ as Judge | judiciary power | Christ is judge
+
+[Sacraments]
+Sacraments in general | sacraments of the New Law | sacraments of the Old Law | number of the sacraments | institution of the sacraments
+Character, sacramental | sacramental character* | character of baptism | imprints a character | imprint a character
+Baptism | baptis*
+Confirmation | confirmation
+Eucharist | Eucharist | sacrament of the altar | body of Christ | blood of Christ
+Transubstantiation | transubstantiat* | conversion of the bread | change of the bread
+Mass | =Mass | celebration of this sacrament
+Penance | penance | penitent*
+Contrition | contrition | contrite | attrition
+Confession | confession | confess*
+Satisfaction | satisfaction
+Indulgences | indulgence*
+Keys, power of the | power of the keys | the keys
+Excommunication | excommunicat*
+Extreme Unction | extreme unction | unction
+Holy Orders | sacrament of order | holy orders | ordination | ordained
+Matrimony | matrimon* | marriage* | wedlock
+Impediments to marriage | impediment*
+Divorce | divorce | separation
+
+[Last things]
+Purgatory | purgator*
+Resurrection of the body | resurrection of the body | resurrection of the dead | risen bodies | general resurrection
+Glorified bodies | glorified bod* | impassibility | subtlety | agility | clarity
+Last judgment | last judgment | general judgment | day of judgment
+Hell | hell | damned | eternal punishment
+Heaven | heaven | the blessed | aureole*
+Limbo | limbo
+Fire of hell | fire of hell | hell fire | fire of Purgatory

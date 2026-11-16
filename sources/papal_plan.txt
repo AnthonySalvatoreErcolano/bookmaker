@@ -1,0 +1,29 @@
+# What to include for each pope:   python papal_scraper.py fetch --plan papal_plan.txt
+#
+# Each line:  pope-slug: tier N  |  tier N + category, category  |  category, category
+#   tier 1  encyclicals
+#   tier 2  + apostolic constitutions, apostolic exhortations, apostolic letters, motu proprio, bulls
+#   tier 3  + messages, letters, prayers, briefs
+#   tier 4  + homilies, general audiences, Angelus, speeches, travels, daily meditations
+# Only documents that exist in English are included. The numbers in the comments are the
+# English counts from your census (Nov 2026), to help you decide.
+
+leo-xiii:     tier 2              # 86 encyclicals; nothing else is in English. Likely 2 volumes.
+pius-x:       tier 2              # 16 encyclicals only. A slim volume.
+benedict-xv:  tier 2              # 12 encyclicals + 1 exhortation + 1 apostolic letter. A slim volume.
+pius-xi:      tier 2              # 25 encyclicals.
+pius-xii:     tier 2              # 40 encyclicals, 2 constitutions (incl. Munificentissimus Deus), 1 exhortation, 1 motu proprio
+                                  #   optional: "tier 2 + speeches, letters" adds 160 speeches and 14 letters
+john-xxiii:   tier 4              # 8 encyclicals + 1 motu proprio + 4 messages + 1 letter + 17 speeches
+                                  #   (the speeches include his opening address to Vatican II)
+paul-vi:      tier 2 + messages   # 7 encyclicals, 4 constitutions, 5 exhortations, 5 apostolic letters, 9 motu proprio
+                                  #   + 66 messages (he began the World Day of Peace)
+                                  #   optional: travels (23), homilies (27), speeches (685)
+john-paul-i:  tier 4              # everything he left in English: 21 short texts from his 33 days
+john-paul-ii: tier 2              # 14 encyclicals, 14 exhortations, 30 apostolic letters, 11 motu proprio, 8 constitutions, 1 bull
+                                  #   tier 3 adds 493 messages + 334 letters; tier 4 adds ~6,300 more texts
+                                  #   for the Theology of the Body use: audiences (438), as its own run
+benedict-xvi: tier 2              # 3 encyclicals, 4 exhortations, 12 apostolic letters, 11 motu proprio, 1 constitution
+francesco:    tier 2              # 4 encyclicals, 7 exhortations, 18 apostolic letters, 58 motu proprio, 5 constitutions, 2 bulls
+leo-xiv:      tier 2              # 1 encyclical, 1 exhortation, 6 apostolic letters (pontificate ongoing)
+                                  #   optional: "tier 2 + messages" adds 119 messages

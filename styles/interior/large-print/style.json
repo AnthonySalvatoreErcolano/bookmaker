@@ -1,0 +1,13 @@
+{
+  "title": "Large Print",
+  "description": "14-point type with generous line spacing, ragged right with no hyphenation, high contrast and bold headings. Sans-serif Atkinson Hyperlegible by default (designed for low vision), or a serif.",
+  "best_for": "Readers with low vision; books to read aloud from; parish and classroom copies.",
+  "margins": {
+    "standard": {"inner": 0.9, "outer": 0.8, "top": 0.8, "bottom": 0.9},
+    "large":    {"inner": 1.1, "outer": 1.4, "top": 1.0, "bottom": 1.1}
+  },
+  "options": {"face": {"values": ["sans", "serif"], "default": "sans"}},
+  "colour": "black and white",
+  "furniture": {"head_font": "bold 10pt 'Atkinson', sans-serif", "folio_font": "bold 13pt 'Atkinson', sans-serif",
+                "head_css": "color: #222;"}
+}

@@ -1,0 +1,243 @@
+# Index terms for the "Documents of the Popes" volumes
+# Same format as index_terms.txt:
+#   Index heading | other spelling | other spelling | options
+#   "=" at the start of a variant = exact capitals; "*" at the end = any ending;
+#   see: X / see also: X for cross-references. Each volume's index only shows what occurs in it.
+#   Notes and footnotes are not indexed. Re-run book_print.py after editing.
+
+[God, Christ and the Church]
+Trinity | Holy Trinity | Most Holy Trinity | three persons
+Holy Spirit | Holy Ghost | Paraclete
+Incarnation | incarnat*
+Redemption | redemption | Redeemer
+Resurrection | resurrection of Christ | risen Christ | rose from the dead
+Sacred Heart | Sacred Heart | Heart of Jesus | Divine Heart
+Divine Mercy | divine mercy | mercy of God | God's mercy
+Kingship of Christ | Christ the King | Kingship of Christ | kingdom of Christ
+Mystical Body | Mystical Body | Body of Christ, the Church
+Church, mission of | mission of the Church
+Church and state | Church and State | civil power | civil authority | temporal power
+Papal primacy | primacy | successor of Peter | successor of St. Peter | Chair of Peter | Apostolic See | Holy See
+Infallibility | infallib*
+Magisterium | magisterium | teaching authority | teaching office
+Collegiality | college of bishops | episcopal college | collegial*
+Synodality | synodal*
+Synod of Bishops | Synod of Bishops
+Second Vatican Council | Second Vatican Council | Vatican Council II | Vatican II
+First Vatican Council | First Vatican Council | Vatican Council I
+Council of Trent | Council of Trent | Tridentine
+Ecumenical councils | ecumenical council*
+Tradition | sacred tradition | apostolic tradition
+Scripture | sacred scripture* | holy scripture* | Word of God | Bible | biblical
+Revelation | divine revelation | revealed truth*
+
+[Mary and the saints]
+Mary, Mother of God | Blessed Virgin | Virgin Mary | Mother of God | Theotokos | Our Lady | Most Holy Mary
+Immaculate Conception | Immaculate Conception
+Assumption | Assumption
+Rosary | Rosary
+Fatima | Fatima | Fátima
+Lourdes
+Guadalupe
+Saints, communion of | communion of saints | communion of the saints
+Saint Joseph | =Joseph | Saint Joseph | St. Joseph | Saint Joseph
+Saint Peter | =Peter | Saint Peter | St. Peter | Prince of the Apostles
+Saint Paul | Apostle of the Gentiles | Saint Paul | St. Paul
+Thomas Aquinas | Aquinas | Angelic Doctor | St. Thomas | Saint Thomas
+Augustine | Augustine | Saint Augustine | St. Augustine
+Francis of Assisi | Francis of Assisi | Saint Francis | St. Francis | Poverello
+Benedict of Nursia | Saint Benedict | St. Benedict
+Thérèse of Lisieux | Thérèse | Therese of Lisieux | Little Flower
+Cyril and Methodius | Cyril and Methodius
+Martyrs | martyr*
+
+[Sacraments, worship and prayer]
+Eucharist | eucharist* | Blessed Sacrament | Real Presence | Holy Communion
+Sacrifice of the Mass | holy sacrifice | sacrifice of the Mass | Eucharistic sacrifice
+Baptism | baptis*
+Confirmation | sacrament of confirmation
+Penance and reconciliation | sacrament of penance | reconciliation | confession | penitent*
+Anointing of the sick | anointing of the sick | extreme unction
+Holy Orders | holy orders | ordination | sacrament of order*
+Marriage | marriage* | matrimon* | spouse* | conjugal
+Liturgy | liturg* | divine worship
+Liturgy of the Hours | Liturgy of the Hours | Divine Office | breviary
+Gregorian chant | Gregorian chant | sacred music
+Vernacular | vernacular | mother tongue
+Latin | Latin language
+Prayer | prayer | prayers | praying
+Eucharistic adoration | adoration | Eucharistic exposition
+Jubilee | jubilee* | Holy Year
+Indulgences | indulgence*
+Relics | relics
+Pilgrimage | pilgrim*
+
+[Clergy, religious and laity]
+Priesthood | priesthood | priestly | presbyter*
+Celibacy | celibacy | celibate
+Seminaries | seminar*
+Bishops, office of | episcopal office | episcopal ministry | episcopate
+Cardinals | College of Cardinals | Sacred College
+Religious life | consecrated life | religious life | religious institutes | vows
+Laity | laity | lay people | laymen | lay faithful | lay apostolate
+Catholic Action | Catholic Action
+Vocations | vocation*
+Catechesis | catechesis | catechism | catechetical | religious instruction
+Missions | missions | missionar* | mission ad gentes | Propagation of the Faith
+Evangelization | evangeliz* | evangelis* | New Evangelization
+Youth | young people | youth
+Women | women | woman's
+
+[Moral life]
+Conscience
+Natural law | natural law
+Truth, objective | objective truth | splendor of truth | relativism of truth
+Freedom, human | human freedom | free will | freedom of the will | true freedom
+Sin | sins | sinful | sinner*
+Original sin | original sin
+Grace | grace of God | sanctifying grace
+Holiness, call to | call to holiness | holiness of life | sanctification
+Human dignity | dignity of the human person | human dignity | dignity of man | dignity of the person
+Human life | human life | right to life | sanctity of life | culture of life
+Culture of death | culture of death
+Abortion | abort*
+Euthanasia | euthanasia | assisted suicide
+Contraception | contracept* | birth control | artificial means | regulation of birth*
+Death penalty | death penalty | capital punishment
+Divorce | divorce*
+Family | family | families
+Children | children | childhood
+Education | education | schools | Catholic school*
+Sexuality | sexuality | chastity
+
+[Social teaching]
+Social doctrine | social doctrine | social teaching | social question
+Common good | common good
+Subsidiarity | subsidiar*
+Solidarity | solidarity
+Labor and workers | labor | labour | workers | workingmen | working class | toil
+Just wage | just wage | wages | family wage
+Trade unions | unions | associations of workers | workingmen's associations
+Private property | private property | private ownership | ownership
+Universal destination of goods | universal destination of goods
+Capital and capitalism | capitalis* | capital and labor | capital and labour
+Socialism | socialis*
+Communism | communis* | Marxis* | atheistic communism
+Liberalism | liberalism
+Totalitarianism | totalitarian*
+Economy | economy | economic*
+Poverty and the poor | the poor | poverty | preferential option for the poor
+Development, human | development of peoples | integral human development | underdevelopment
+Rights, human | human rights | rights of man | fundamental rights
+State, the | =the State | =The State | public authority
+Democracy | democra*
+Religious freedom | religious freedom | religious liberty | freedom of conscience
+Migrants and refugees | migrant* | refugee* | emigra* | immigra*
+Racism | racis* | racial discrimination
+Peace, world | peace among nations | world peace | peace on earth | World Day of Peace | peacemak*
+War | war | warfare | armed conflict*
+Nuclear weapons | nuclear | atomic weapons | arms race | disarmament
+United Nations | United Nations | League of Nations
+Environment and creation | environment* | ecolog* | care for creation | common home | climate change
+Technology | technology | technological | technical progress
+Artificial intelligence | artificial intelligence
+Media | social communication* | cinema | radio | television | internet
+Usury | usur*
+Slavery | slave* | human trafficking
+
+[Errors and controversies]
+Modernism | modernis*
+Americanism | Americanism
+Freemasonry | Freemason* | Masonic | Masons
+Rationalism | rationalis*
+Materialism | materialis*
+Relativism | relativis*
+Secularism | secularis* | laicism | laicis*
+Atheism | atheis*
+Indifferentism | indifferentism | religious indifference
+Nationalism | nationalis*
+Gnosticism | gnostic*
+Pelagianism | pelagian*
+Clericalism | clericalis*
+
+[Christian unity and other religions]
+Ecumenism | ecumenis* | Christian unity | separated brethren | unity of Christians
+Orthodox churches | Orthodox | Eastern Churches | Oriental Churches | Eastern Rite
+Anglicans | Anglican*
+Protestants | Protestant* | Lutheran* | Reformation
+Jews and Judaism | Jew* | Jewish | Judaism | Hebrew* | Israel
+Islam | Islam | Muslim* | Moslem* | Mohammedan*
+Interreligious dialogue | interreligious | non-Christian religions | other religions
+Dialogue | dialogue
+
+[Places]
+Rome | =Rome | Eternal City
+Vatican | Vatican City | Lateran Treaty | Lateran Pacts | Roman Question
+Italy | Italy | Italian people
+France | France | French
+Germany | Germany | German
+Poland | Poland | Polish
+Spain | Spain | Spanish
+Portugal
+Ireland | Ireland | Irish
+England | England | Great Britain | British
+United States | United States | America | American
+Mexico | Mexico | Mexican
+Latin America | Latin America
+Russia | Russia | Soviet
+China | China | Chinese
+Africa | Africa | African
+Asia
+Holy Land | Holy Land | Palestine | Jerusalem
+Ukraine
+Armenia | Armenia*
+Hungary | Hungar*
+Austria | Austria*
+Belgium
+Netherlands | Netherlands | Holland | Dutch
+Brazil
+Philippines | Philippine* | Filipino
+India
+Japan
+
+[Major documents (page where each begins)]
+Rerum Novarum | =doc
+Aeterni Patris | =doc
+Pascendi Dominici Gregis | =doc
+Quadragesimo Anno | =doc
+Casti Connubii | =doc
+Mit Brennender Sorge | =doc
+Divini Redemptoris | =doc
+Mystici Corporis Christi | =doc
+Divino Afflante Spiritu | =doc
+Humani Generis | =doc
+Mediator Dei | =doc
+Munificentissimus Deus | =doc
+Mater et Magistra | =doc
+Pacem in Terris | =doc
+Ecclesiam Suam | =doc
+Populorum Progressio | =doc
+Humanae Vitae | =doc
+Evangelii Nuntiandi | =doc
+Redemptor Hominis | =doc
+Laborem Exercens | =doc
+Familiaris Consortio | =doc
+Sollicitudo Rei Socialis | =doc
+Redemptoris Mater | =doc
+Centesimus Annus | =doc
+Veritatis Splendor | =doc
+Evangelium Vitae | =doc
+Ut Unum Sint | =doc
+Fides et Ratio | =doc
+Ecclesia de Eucharistia | =doc
+Deus Caritas Est | =doc
+Spe Salvi | =doc
+Caritas in Veritate | =doc
+Lumen Fidei | =doc
+Evangelii Gaudium | =doc
+Laudato Si' | =doc
+Amoris Laetitia | =doc
+Gaudete et Exsultate | =doc
+Fratelli Tutti | =doc
+Dilexit Nos | =doc
+Dilexi Te | =doc

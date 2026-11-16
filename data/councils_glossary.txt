@@ -1,0 +1,523 @@
+# Glossary for the Councils volumes
+#
+# Each entry: the term on its own line, an optional "match:" line, then the definition.
+# Leave a blank line between entries.
+#   match:  words to look for in the text, separated by | (same rules as index_terms.txt:
+#           "*" = any ending, "=" = exact capitals). Without a match: line the term itself is used.
+# A volume's glossary includes an entry only if the term appears in that volume.
+# These definitions are editorial (not part of the council texts); edit them freely.
+
+Absolution
+match: absolution | absolve*
+In the sacrament of penance, the words by which a priest declares the penitent's sins forgiven.
+
+Anathema
+match: anathem* | anathematis* | anathematiz*
+A solemn condemnation that cuts a person off from the communion of the Church. In conciliar canons the formula "let him be anathema" attaches this sentence to anyone who holds the doctrine being condemned.
+
+Annates
+The first year's revenues of a benefice, paid to the papal treasury by the person appointed to it.
+
+Antipope
+match: antipope*
+A person who claimed or exercised the office of pope in opposition to the one regarded by the Church as the lawful pope.
+
+Apocrisiarius
+match: apocrisiari*
+An envoy representing the pope or a patriarch at the imperial court in Constantinople; a forerunner of the later papal nuncio.
+
+Apollinarianism
+match: Apollinar*
+The teaching of Apollinarius of Laodicea (4th century) that in Christ the divine Word took the place of a human mind, so that Christ was not fully human. Condemned at Constantinople I (381).
+
+Apostolate
+match: apostolate*
+The mission of spreading the Gospel and sanctifying the world. Vatican II taught that all the faithful, lay people as well as clergy, share in it.
+
+Apostolic see
+match: apostolic see
+The see of Rome, as founded on the apostles Peter and Paul; by extension, the pope and the officials acting in his name.
+
+Archdeacon
+match: archdeacon*
+A senior cleric who assisted the bishop in governing a diocese, especially in matters of discipline and church property.
+
+Archimandrite
+match: archimandrite*
+In the Eastern churches, the head of a large monastery or of a group of monasteries.
+
+Arianism
+match: Arius | Arian*
+The teaching of the Alexandrian priest Arius (d. 336) that the Son of God was created by the Father and was therefore neither eternal nor fully divine. Condemned at Nicaea I (325).
+
+Attrition
+match: attrition
+Sorrow for sin arising from motives such as fear of punishment, as distinguished from contrition. Trent taught that it disposes the sinner to receive grace in the sacrament of penance.
+
+Beguines and Beghards
+match: Beguin* | Beghard*
+Communities of laywomen (Beguines) and laymen (Beghards) who lived a religious life without taking permanent vows. Their way of life was restricted at the Council of Vienne (1311–1312).
+
+Benefice
+match: benefice*
+A church office that carries a permanent right to an income, usually from endowed property, such as a parish or a canonry.
+
+Breviary
+match: breviar*
+The book containing the Divine Office, the daily cycle of prayer said by clergy and religious. Trent entrusted its revision to the pope.
+
+Bull
+match: bull | bulls
+A solemn papal document, named after the lead seal (Latin bulla) attached to it.
+
+Canon
+match: canon | canons
+(1) A rule or decree of church law, especially one issued by a council. (2) A member of the chapter of a cathedral or collegiate church. (3) The canon of Scripture: the list of books recognised as inspired.
+
+Cardinal
+match: cardinal*
+A senior cleric of the Roman Church who advises the pope and, since 1059, takes part in electing him.
+
+Catechumen
+match: catechumen*
+A person preparing for baptism through instruction and a period of probation.
+
+Cathars
+match: =Cathar* | Albigensian*
+(1) The name ("the pure") used by the Novatianists, a rigorist schism of the early Church, as in canon 8 of Nicaea I. (2) The dualist heretics of 12th- and 13th-century southern France and Italy, also called Albigensians, condemned at Lateran III and Lateran IV.
+
+Celibacy
+match: celibacy | celibate
+The obligation of clergy in major orders in the Latin Church to remain unmarried.
+
+Chapter
+match: chapter of the cathedral | cathedral chapter* | chapters of cathedral* | cathedral and collegiate
+The body of canons attached to a cathedral or collegiate church, responsible for its worship and at times for electing the bishop.
+
+Chorepiscopus
+match: chorepiscop*
+In the early Church, a "country bishop" who served rural districts under the authority of the bishop of the city.
+
+Chrism
+match: chrism
+Consecrated olive oil mixed with balsam, used in baptism, confirmation and ordination.
+
+Clandestine marriage
+match: clandestine
+A marriage contracted secretly, without the public form required by the Church. Trent's decree Tametsi required marriage to be celebrated before the parish priest and witnesses.
+
+Collegiality
+match: college of bishops | episcopal college | collegial*
+The teaching of Vatican II that the bishops, together with the pope as their head and never without him, form a college that shares responsibility for the whole Church.
+
+Commendam
+match: commend*
+The holding of a benefice "in trust" by someone who drew its revenues without residing in it or carrying out its duties; frequently criticised as an abuse.
+
+Communion under both kinds
+match: both species | both kinds | under one species | under the species of bread
+Receiving the Eucharist as both bread and wine. Constance and Trent upheld the practice of giving lay people communion under the form of bread alone.
+
+Conciliarism
+match: superior to the pope | authority immediately from Christ | conciliar*
+The theory that a general council holds authority superior to that of the pope; associated with the councils of Constance and Basel.
+
+Concubinage
+match: concubin*
+A lasting sexual relationship outside marriage. Councils legislated repeatedly against concubinage among the clergy.
+
+Concupiscence
+match: concupiscence
+The inclination to sin that remains after baptism. Trent taught that it comes from sin and inclines to sin, but is not itself sin in the baptised.
+
+Confirmation
+match: sacrament of confirmation | confirmation | #19-21
+The sacrament in which the baptised are anointed with chrism and sealed with the Holy Spirit.
+
+Consanguinity
+match: consanguinity | affinity
+Blood relationship, which in certain degrees is an impediment to marriage. Affinity is the corresponding relationship created by marriage.
+
+Consubstantial
+match: consubstantial | homoousios | homoousion | one substance
+"Of one substance" (Greek homoousios): the term used at Nicaea I to affirm that the Son shares the same divine being as the Father.
+
+Contrition
+match: contrition | contrite
+Sorrow for sin, together with the resolve not to sin again, arising from love of God.
+
+Curia
+match: curia*
+The offices and officials who assist the pope (the Roman curia) or a bishop in governing the Church.
+
+Deacon
+match: deacon | deacons | diaconate
+An ordained minister of the order below bishop and presbyter, traditionally assisting in the liturgy and in the care of the poor.
+
+Deaconess
+match: deaconess*
+In the early Church, a woman appointed to ministries such as assisting at the baptism of women. Nicaea I classed the deaconesses of the Paulianists among the laity.
+
+Diocese
+match: diocese*
+The territory and the faithful entrusted to a bishop.
+
+Dispensation
+match: dispensat*
+The relaxation of a church law in a particular case by a competent authority.
+
+Divine Office
+match: divine office | canonical hours | the hours
+The Church's daily public prayer at fixed hours (the canonical hours), recited by clergy and religious; also called the Liturgy of the Hours.
+
+Dogmatic constitution
+match: dogmatic constitution*
+The title given to the most solemn doctrinal documents of Vatican I and Vatican II, such as Dei Filius, Lumen Gentium and Dei Verbum.
+
+Ecumenical council
+match: ecumenical council* | general council*
+A gathering of the bishops of the whole Church whose decrees, approved by the pope, bind the whole Church. The twenty-one councils in these volumes are those counted as ecumenical by the Catholic Church.
+
+Ecumenism
+match: ecumenism | ecumenical movement
+The movement for restoring unity among divided Christians, the subject of Vatican II's decree Unitatis Redintegratio.
+
+Episcopal conference
+match: episcopal conference*
+The assembly of the bishops of a country or region acting together, given a formal role by Vatican II.
+
+Eucharist
+match: eucharist*
+The sacrament of the body and blood of Christ, offered in the Mass and received in Holy Communion.
+
+Eutychianism
+match: Eutyches | Eutychian*
+The teaching of the monk Eutyches that after the incarnation Christ had only one nature, the human being absorbed into the divine. Condemned at Chalcedon (451). See also Monophysitism.
+
+Ex cathedra
+match: ex cathedra
+"From the chair": describes a definition by the pope, acting as supreme teacher of the Church, of a doctrine of faith or morals to be held by the whole Church. Vatican I declared such definitions infallible.
+
+Exarch
+match: exarch*
+In the early Eastern Church, a senior bishop with authority over several provinces; later also a deputy of a patriarch.
+
+Excommunication
+match: excommunicat*
+Exclusion from the communion of the Church, especially from the sacraments, imposed as a penalty for grave offences.
+
+Exemption
+match: exemption* | exempt
+The release of a person or institution, usually a religious order or monastery, from the authority of the local bishop, placing it directly under the pope.
+
+Extreme unction
+match: extreme unction | unction of the sick
+The sacrament of anointing the seriously ill with oil, now usually called the anointing of the sick.
+
+Filioque
+match: Filioque | from the Father and the Son | from the Father and from the Son
+"And from the Son": the Latin addition to the creed stating that the Holy Spirit proceeds from the Father and the Son. A long-standing point of dispute with the Eastern churches, addressed at Lyons II and Florence.
+
+Free will
+match: free will | free-will | freedom of the will
+The human capacity to choose. Against the Reformers, Trent affirmed that it was weakened, but not destroyed, by the fall.
+
+Grace
+match: grace
+God's free gift; in Catholic teaching especially the gift by which God makes a person just and able to live a holy life (sanctifying or justifying grace).
+
+Holy orders
+match: holy orders | sacrament of order | ordination
+The sacrament by which bishops, priests and deacons are ordained.
+
+Hypostasis
+match: hypostas* | hypostatic*
+Greek for a concrete individual reality; in the doctrine of the Trinity, a "person" (three hypostases in one substance). The hypostatic union is the union of the divine and human natures in the one person of Christ.
+
+Iconoclasm
+match: iconoclas*
+The 8th- and 9th-century movement that rejected and destroyed religious images. Condemned at Nicaea II (787).
+
+Indiction
+match: indiction
+In council documents, the formal announcement of the date of a council or of its next session. (Also the name of a fifteen-year cycle used in dating documents.)
+
+Index of Forbidden Books
+match: index of books | index of prohibited books | forbidden books | prohibited books
+The list of books that Catholics were forbidden to read or keep. Trent entrusted its preparation to the pope.
+
+Indulgence
+match: indulgence*
+A remission, granted by the Church, of the temporal punishment still due for sins whose guilt has already been forgiven.
+
+Infallibility
+match: infallib*
+The gift by which the Church, and the pope when defining doctrine ex cathedra, is preserved from error in defining doctrine of faith or morals (Vatican I, Pastor Aeternus).
+
+Interdict
+match: interdict*
+A church penalty that forbids most sacraments and public worship in a place, or bars certain persons from them.
+
+Investiture
+match: investiture | lay hands
+The conferring of a church office together with its symbols. The investiture of bishops by lay rulers was contested in the 11th and 12th centuries and settled by the Concordat of Worms (1122), confirmed at Lateran I.
+
+Justification
+match: justif*
+The passage of a sinner from a state of sin to a state of grace and righteousness before God; the subject of Trent's sixth session.
+
+Laity
+match: laity | lay people | laymen | lay persons
+All the faithful who are not ordained; in Vatican II's usage, also distinct from members of religious orders.
+
+Lapsed
+match: lapsed
+In the early Church, Christians who had denied the faith under persecution.
+
+Legate
+match: legate*
+A representative of the pope, often presiding at councils in his name.
+
+Liturgy
+match: liturg*
+The public worship of the Church, above all the Mass and the sacraments.
+
+Magisterium
+match: magisterium | teaching authority | teaching office
+The teaching authority of the Church, exercised by the pope and by the bishops in communion with him.
+
+Manichees
+match: Manichae* | Manichee*
+Followers of the religion founded by Mani (3rd century), which taught two opposing first principles of good and evil. The name was later applied to dualist heresies generally.
+
+Matrimony
+match: matrimon*
+The sacrament of marriage, defined by Trent as one of the seven sacraments.
+
+Mendicant orders
+match: mendicant* | friars
+Religious orders that lived by begging rather than from endowments, notably the Franciscans and Dominicans.
+
+Merit
+match: merit | merits | meritorious
+The reward due to good works. Trent taught that the good works of the justified, done in grace, truly merit eternal life.
+
+Messalians
+match: Messalian* | Euchites
+An ascetic movement (also called Euchites, "those who pray") which held that prayer alone, not the sacraments, could free the soul from evil. Condemned at Ephesus (431).
+
+Metropolitan
+match: metropolitan*
+The bishop of the chief city (metropolis) of an ecclesiastical province, with oversight of its other bishops; later usually called an archbishop.
+
+Missal
+match: missal
+The book containing the prayers and directions for celebrating Mass. Trent entrusted its revision to the pope.
+
+Monophysitism
+match: monophysit* | one nature | #3-8
+The doctrine that after the incarnation Christ has only one nature, rejected by Chalcedon's definition of two natures in one person.
+
+Monothelitism
+match: monothelet* | monothelit* | one will | #6-8
+The 7th-century teaching that Christ had only one will. Constantinople III (680–681) rejected it and defined two natural wills in Christ.
+
+Monte di pietà
+match: monte* di pietà | mons pietatis | montes pietatis | monti di pietà
+A charitable pawnshop lending to the poor at small charges. Lateran V declared such institutions lawful.
+
+Nestorianism
+match: Nestorius | Nestorian*
+The teaching attributed to Nestorius, bishop of Constantinople, that the divine and the human in Christ were two distinct subjects, expressed in his rejection of the title Theotokos. Condemned at Ephesus (431).
+
+Ordinary
+match: local ordinar* | the ordinary | ordinaries
+A cleric with jurisdiction by virtue of his office rather than by delegation, above all the bishop of a diocese ("local ordinary").
+
+Origenism
+match: Origen | Origenist*
+Ideas attributed to Origen (3rd century) and his later followers, such as the pre-existence of souls and a final restoration of all things, condemned in the 6th century.
+
+Original sin
+match: original sin
+The state of sin into which all human beings are born as a consequence of Adam's sin, removed by baptism. Defined at Trent's fifth session.
+
+Ousia
+match: ousia*
+Greek for "substance" or "essence"; in the doctrine of the Trinity, the one divine being shared by Father, Son and Holy Spirit.
+
+Pallium
+match: pallium
+A band of white wool worn by the pope and conferred by him on metropolitan archbishops as a sign of their authority and of communion with Rome.
+
+Patriarch
+match: patriarch*
+The bishop of one of the principal sees of Christendom (Rome, Constantinople, Alexandria, Antioch and Jerusalem), with authority over a wide region; also the head of certain Eastern churches.
+
+Paulianists
+match: Paulianist* | Paulinist* | Paul of Samosata
+Followers of Paul of Samosata (3rd century), who denied the distinct divinity of the Son. Nicaea I required them to be rebaptised.
+
+Penance
+match: penance
+The sacrament by which sins committed after baptism are forgiven, through contrition, confession, satisfaction and absolution; also the works of satisfaction themselves.
+
+Penitential grades
+match: hearers | prostrators | kneelers | weepers
+The stages through which public penitents passed in the early Church before full readmission: weepers, hearers (who left after the readings), prostrators or kneelers, and those who stood with the faithful but did not receive communion.
+
+People of God
+match: People of God
+Vatican II's image of the Church as the people whom God has gathered in Christ, made up of all the faithful.
+
+Pluralism
+match: plurality of benefices | several benefices | pluralit*
+The holding of several benefices at once by one person, repeatedly restricted by councils.
+
+Pneumatomachians
+match: Pneumatomachi* | Macedonian*
+"Fighters against the Spirit", also called Macedonians: those who denied the divinity of the Holy Spirit. Condemned at Constantinople I (381).
+
+Pragmatic Sanction
+match: pragmatic sanction
+The Pragmatic Sanction of Bourges (1438), by which the French crown limited papal rights in France. Condemned and annulled at Lateran V.
+
+Prebend
+match: prebend*
+The share of a cathedral's revenues assigned to a canon; by extension, the canonry itself.
+
+Predestination
+match: predestinat*
+God's eternal decree ordering the elect to salvation. Trent warned against presuming that one is among the predestined.
+
+Presbyter
+match: presbyter*
+An "elder": a priest, of the order between bishop and deacon.
+
+Primacy
+match: primacy
+The authority of the pope, as successor of Peter, over the whole Church, defined at Vatican I.
+
+Primate
+match: primate*
+A bishop with precedence over the other bishops of a country or region.
+
+Provincial synod
+match: provincial synod* | provincial council*
+A meeting of the bishops of an ecclesiastical province under their metropolitan, which councils required to be held at regular intervals.
+
+Purgatory
+match: purgator*
+The state of purification after death of those who die in God's grace but still need cleansing before entering heaven.
+
+Quartodecimans
+match: quartodeciman* | fourteenth day
+Christians who kept Easter on the 14th day of the Jewish month of Nisan, whatever the day of the week, rather than on the following Sunday.
+
+Regular and secular clergy
+match: regulars | secular clergy | secular clerics | regular clergy | seculars
+Regular clergy live under a religious rule (Latin regula), such as monks, friars and canons regular. Secular clergy serve "in the world" under a bishop, such as parish priests.
+
+Relics
+match: relics
+The bodily remains of saints, or objects associated with them, venerated by the faithful.
+
+Religious
+match: religious orders | religious life | the religious
+As a noun, a member of a religious order or congregation who has taken vows.
+
+Reservation
+match: reserved cases | reservation* | reserv* of cases
+The keeping of certain matters to a higher authority: for example the absolution of certain grave sins (reserved cases), or the appointment to certain benefices.
+
+Residence
+match: residence | reside
+The obligation of bishops and other pastors to live in the place of their office, strongly reinforced at Trent.
+
+Rite
+match: rite | rites
+A liturgical and disciplinary tradition within the Church, such as the Latin (Roman) rite or the various Eastern rites.
+
+Sabellianism
+match: Sabellius | Sabellian*
+The teaching of Sabellius (3rd century) that Father, Son and Holy Spirit are only successive modes or names of one divine person.
+
+Sacrament
+match: sacrament | sacraments
+An outward sign instituted by Christ that confers grace. Florence and Trent taught that there are seven: baptism, confirmation, Eucharist, penance, extreme unction, holy orders and matrimony.
+
+Satisfaction
+match: satisfaction
+The works (such as prayer, fasting and almsgiving) by which a penitent makes amends for sin; a part of the sacrament of penance.
+
+Schism
+match: schism*
+A break in the communion of the Church, which need not involve a difference of doctrine.
+
+See
+match: =see | =See of | episcopal see* | the see
+The seat of a bishop's authority; by extension, the diocese itself.
+
+Seminary
+match: seminar*
+A college for the training of priests. Trent ordered every diocese to establish one.
+
+Session
+match: session*
+A formal meeting of a council, at which its decrees were read out and approved.
+
+Simony
+match: simon* | simoniac*
+The buying or selling of spiritual things, especially church offices and sacraments; named after Simon Magus (Acts 8:18–24).
+
+Suffragan
+match: suffragan*
+A bishop of a diocese within a province, subject to its metropolitan.
+
+Synod
+match: synod*
+A council or assembly of bishops. In these texts the words "synod" and "council" are used interchangeably.
+
+Templars
+match: Templar* | Order of the Temple | #15
+The Knights Templar, a military religious order founded in the 12th century to protect pilgrims to the Holy Land. Suppressed by Pope Clement V at the Council of Vienne (1312).
+
+Theotokos
+match: Theotokos | mother of God | God-bearer
+"God-bearer" or Mother of God: the title of Mary affirmed at Ephesus (431).
+
+Three Chapters
+match: Three Chapters
+Writings of Theodore of Mopsuestia, Theodoret of Cyrrhus and Ibas of Edessa, condemned at Constantinople II (553).
+
+Tithe
+match: tithe*
+The tenth part of produce or income owed to the Church for the support of the clergy and the poor.
+
+Tradition
+match: tradition*
+The teaching handed down in the Church from the apostles, alongside Scripture. Trent spoke of "unwritten traditions", Vatican II of Sacred Tradition.
+
+Transubstantiation
+match: transubstantiat*
+The change of the whole substance of the bread and wine into the body and blood of Christ in the Eucharist, while the appearances of bread and wine remain. The term appears at Lateran IV and was defined at Trent.
+
+Usury
+match: usur*
+In medieval canon law, the taking of any profit on a loan; forbidden to clergy at Nicaea I and later to all Christians.
+
+Vernacular
+match: vernacular | mother tongue
+The everyday language of a people, as distinct from Latin. Vatican II allowed its wider use in the liturgy.
+
+Viaticum
+match: viaticum
+Holy Communion given to the dying, as "provision for the journey".
+
+Vulgate
+match: Vulgate
+The Latin translation of the Bible made largely by St Jerome, declared authentic for public use by Trent.
+
+Waldensians
+match: Waldens* | Poor of Lyons
+Followers of Valdes of Lyons (12th century), a lay movement of voluntary poverty and preaching, later condemned as heretical.

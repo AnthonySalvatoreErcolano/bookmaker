@@ -1,0 +1,15 @@
+{
+  "title": "Red & Black Liturgical",
+  "description": "Rubrics, titles and initials in red, text in black, Garamond type and narrow margins so Latin and English fit side by side. Red initial letters open each chapter.",
+  "best_for": "Missals, breviaries, offices, prayer books, parallel-text editions.",
+  "margins": {
+    "standard": {"inner": 0.85, "outer": 0.7, "top": 0.8, "bottom": 0.85},
+    "large":    {"inner": 1.0, "outer": 1.3, "top": 1.0, "bottom": 1.0}
+  },
+  "initials": true,
+  "options": {"rubric": {"values": ["red", "black"], "default": "red", "help": "black makes it a black-and-white book"}},
+  "colour": "colour (red); choose rubric=black for black-and-white printing",
+  "furniture": {"head_font": "8.5pt 'EB Garamond', serif", "folio_font": "10pt 'EB Garamond', serif",
+                "head_css": "font-variant: small-caps; letter-spacing: .08em; color: #b0201c;",
+                "folio_css": "color: #b0201c;"}
+}

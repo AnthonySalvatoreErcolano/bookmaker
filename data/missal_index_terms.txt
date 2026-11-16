@@ -1,0 +1,38 @@
+# Index terms for the missal volumes (same format as index_terms.txt).
+# missal_book.py adds every Mass title automatically (missal_index_titles.txt); this file holds
+# the hand-made topical entries.
+
+[Seasons and days]
+Advent | Advent | Advéntus
+Christmas | Nativity of our Lord | Christmas | Nativitáte Dómini
+Epiphany | Epiphany | Epiphan*
+Septuagesima | Septuagesim*
+Ash Wednesday | Ash Wednesday | Feria IV Cinerum | Cinerum
+Lent | Lent | Quadragesim*
+Passiontide | Passion Sunday | Passiontide | Dominica de Passione
+Palm Sunday | Palm Sunday | Dominica in Palmis
+Holy Thursday | Holy Thursday | Maundy Thursday | Cœna Domini
+Good Friday | Good Friday | Parasceve
+Holy Saturday and the Easter Vigil | Holy Saturday | Easter Vigil | Sabbato Sancto | Vigilia Paschalis
+Easter | Easter Sunday | Dominica Resurrectionis | Paschæ
+Ascension | Ascension | Ascensione
+Pentecost | Pentecost | Whitsunday | Pentecost*
+Trinity Sunday | Trinity Sunday | Sanctissimæ Trinitatis
+Corpus Christi | Corpus Christi
+Sacred Heart | Sacred Heart | Sacratissimi Cordis
+Christ the King | Christ the King | Christi Regis | D.N. Jesu Christi Regis
+Ember days | Ember* | Quattuor Temporum | Quatuor Temporum
+Rogation days | Rogation* | Litaniis
+All Souls | All Souls | Omnium Defunctorum | Commemoration of All the Faithful Departed
+
+[Rites and texts]
+Masses for the dead | Requiem | Missa pro Defunctis | Defunctorum | for the dead
+Sequences | Victimæ paschali | Veni, Sancte Spiritus | Lauda Sion | Stabat Mater | Dies iræ
+Blessing of candles | blessing of candles | Benedictio Candelarum
+Blessing of ashes | blessing of the ashes | Benedictio Cinerum
+Blessing of palms | blessing of palms | Benedictio Palmarum
+Washing of feet | washing of the feet | Mandatum
+Adoration of the Cross | Adoration of the Cross | Adoratio Crucis
+Exsultet | Exsultet | Exultet
+Litany of the Saints | Litany of the Saints | Litaniæ Sanctorum
+Baptismal promises | baptismal promises | renewal of baptismal vows

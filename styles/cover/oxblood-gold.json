@@ -1,0 +1,16 @@
+{
+ "title": "Oxblood & Gold",
+ "layout": "cloth-frame",
+ "emblem": "cross-circle",
+ "description": "Deep oxblood cloth with a double gold frame, gold title and emblem. The Councils jackets.",
+ "palette": {
+  "ground": "#4a1016",
+  "ground2": "#3d0d12",
+  "title": "#c9a45a",
+  "line": "#c9a45a",
+  "text": "#f1e6cf",
+  "muted": "#d8c39a",
+  "accent": "#c9a45a",
+  "accent2": "#c9a45a"
+ }
+}

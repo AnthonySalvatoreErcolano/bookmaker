@@ -1,0 +1,7 @@
+:root { --body-font: 'Termes', serif; --size: 9.5pt; --leading: 1.3; --para-gap: .35em; --h1-size: 18pt; --h3-size: 1em; }
+h1.chapter { text-transform: uppercase; letter-spacing: .12em; font-weight: bold; font-size: 15pt; border-bottom: 1.2pt solid #111; }
+h2 { font-variant: normal; text-transform: uppercase; letter-spacing: .08em; font-size: 1.05em; font-weight: bold; }
+h3 { font-weight: bold; margin: 1em 0 .3em; }
+.cols p { text-indent: 1em; margin-bottom: .15em; }
+.cols p:first-child, .cols h3 + p, .cols h4 + p { text-indent: 0; }
+.qa .q { font-weight: bold; }

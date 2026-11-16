@@ -1,0 +1,45 @@
+/* Illuminated Manuscript */
+:root { --body-font: 'Fell', 'EB Garamond', serif; --head-font: 'Fraktur', serif; --display-font: 'Fraktur', serif;
+        --size: 11.5pt; --leading: 1.38; --ink: #2a1d12; --muted: #6b5640; --faint: #b99a6a;
+        --rubric: #a3201b; --accent: #a3201b; --gold: #9a7420; --slate: #1f3f8f; --blue: #1f3f8f;
+        --h1-size: 30pt; --h2-size: 1.5em; --h3-size: 1.25em; }
+body[data-opt-script="uncial"] { --head-font: 'Uncial', serif; --display-font: 'Uncial', serif; --h1-size: 24pt; }
+body[data-opt-text="garamond"] { --body-font: 'EB Garamond', serif; --size: 11.5pt; }
+
+h1.chapter { color: var(--rubric); border-bottom: none; margin: .25in 0 .5em; letter-spacing: .01em; line-height: 1.15; }
+h1.chapter::after { content: ""; display: block; height: 14pt; margin: .18in auto 0; width: 2.6in;
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30'%3E%3Cpath d='M5,15 C40,0 60,30 95,15 S150,0 150,15 S205,30 205,15 S260,0 295,15' fill='none' stroke='%237a5410' stroke-width='1.4'/%3E %3Cg fill='%23b8892c'%3E%3Ccircle cx='150' cy='15' r='5'/%3E%3C/g%3E%3Cg fill='%23a3201b'%3E%3Ccircle cx='95' cy='15' r='3.4'/%3E%3Ccircle cx='205' cy='15' r='3.4'/%3E%3C/g%3E %3Cg fill='%231f3f8f'%3E%3Ccircle cx='40' cy='9' r='2.6'/%3E%3Ccircle cx='260' cy='21' r='2.6'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
+h2 { font-variant: normal; letter-spacing: 0; font-weight: normal; color: var(--blue); }
+h3 { font-weight: normal; color: var(--rubric); }
+h4 { color: var(--blue); }
+h2.doc-title .doc-latin { font-style: normal; color: var(--rubric); }
+h2.doc-title .doc-kind { color: var(--blue); font-variant: normal; font-family: var(--head-font); font-weight: normal; }
+.canons-label, .box-label { font-family: var(--head-font); font-variant: normal; letter-spacing: .02em; font-weight: normal; font-size: 1.3em; }
+.canons, .anathemas { border-left: 2pt solid var(--rubric); }
+.creed { border-left: 2pt solid var(--gold); }
+.intro { border-left: 1pt solid var(--blue); color: var(--ink); }
+.qa .q .qn, .canons .canon-num { color: var(--rubric); }
+.pair .en, .pair .right { border-left-color: var(--faint); }
+
+/* gilded initials: a gold frame, a painted ground with white penwork, the letter in gold */
+.initial { font-family: 'Uncial', serif; font-size: 2.55em; line-height: 1.32em; width: 1.36em; height: 1.36em;
+           text-align: center; margin: .08em .16em 0 0; color: #f2cf6a;
+           background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E %3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f6dc8a'/%3E%3Cstop offset='.5' stop-color='%23d4a73c'/%3E%3Cstop offset='1' stop-color='%23f1d27a'/%3E%3C/linearGradient%3E%3C/defs%3E %3Crect x='1' y='1' width='98' height='98' fill='url(%23g)' stroke='%237a5410' stroke-width='1.6'/%3E %3Crect x='9' y='9' width='82' height='82' fill='%231f3f8f' stroke='%237a5410' stroke-width='1'/%3E %3Cg fill='none' stroke='%23fff' stroke-opacity='.75' stroke-width='.9'%3E %3Cpath d='M14,86 C20,70 12,60 22,52 C30,46 26,36 18,34'/%3E%3Cpath d='M86,14 C80,30 88,40 78,48 C70,54 74,64 82,66'/%3E %3Cpath d='M14,14 C24,16 28,24 24,30 C21,34 16,31 18,27'/%3E%3Cpath d='M86,86 C76,84 72,76 76,70 C79,66 84,69 82,73'/%3E %3Ccircle cx='18' cy='27' r='1.4' fill='%23fff'/%3E%3Ccircle cx='82' cy='73' r='1.4' fill='%23fff'/%3E %3C/g%3E%3Cg fill='%23f6dc8a'%3E%3Ccircle cx='15' cy='50' r='1.6'/%3E%3Ccircle cx='85' cy='50' r='1.6'/%3E%3Ccircle cx='50' cy='15' r='1.6'/%3E%3Ccircle cx='50' cy='85' r='1.6'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat; }
+.initial.alt { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E %3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f6dc8a'/%3E%3Cstop offset='.5' stop-color='%23d4a73c'/%3E%3Cstop offset='1' stop-color='%23f1d27a'/%3E%3C/linearGradient%3E%3C/defs%3E %3Crect x='1' y='1' width='98' height='98' fill='url(%23g)' stroke='%237a5410' stroke-width='1.6'/%3E %3Crect x='9' y='9' width='82' height='82' fill='%23a3201b' stroke='%237a5410' stroke-width='1'/%3E %3Cg fill='none' stroke='%23fff' stroke-opacity='.75' stroke-width='.9'%3E %3Cpath d='M14,86 C20,70 12,60 22,52 C30,46 26,36 18,34'/%3E%3Cpath d='M86,14 C80,30 88,40 78,48 C70,54 74,64 82,66'/%3E %3Cpath d='M14,14 C24,16 28,24 24,30 C21,34 16,31 18,27'/%3E%3Cpath d='M86,86 C76,84 72,76 76,70 C79,66 84,69 82,73'/%3E %3Ccircle cx='18' cy='27' r='1.4' fill='%23fff'/%3E%3Ccircle cx='82' cy='73' r='1.4' fill='%23fff'/%3E %3C/g%3E%3Cg fill='%23f6dc8a'%3E%3Ccircle cx='15' cy='50' r='1.6'/%3E%3Ccircle cx='85' cy='50' r='1.6'/%3E%3Ccircle cx='50' cy='15' r='1.6'/%3E%3Ccircle cx='50' cy='85' r='1.6'/%3E%3C/g%3E%3C/svg%3E") center / 100% 100% no-repeat; }
+p.has-initial::first-line { font-variant: small-caps; letter-spacing: .03em; }
+
+/* paragraph marks instead of indents, alternating red and blue */
+body[data-opt-pilcrows="on"] .cols p:not(.has-initial)::before, body[data-opt-pilcrows="on"] > p:not(.has-initial)::before
+  { content: "¶ "; color: var(--rubric); }
+body[data-opt-pilcrows="on"] .cols p:nth-of-type(even):not(.has-initial)::before,
+body[data-opt-pilcrows="on"] > p:nth-of-type(even):not(.has-initial)::before { color: var(--blue); }
+
+.title-page .t1 { font-family: var(--display-font); color: var(--rubric); font-size: 40pt; line-height: 1.15; }
+.title-page .t2 { font-family: var(--head-font); font-variant: normal; letter-spacing: .02em; color: var(--blue); font-size: 18pt; }
+.title-page .t-ornament { height: 22pt; width: 3in; margin: .35in auto 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30'%3E%3Cpath d='M5,15 C40,0 60,30 95,15 S150,0 150,15 S205,30 205,15 S260,0 295,15' fill='none' stroke='%237a5410' stroke-width='1.4'/%3E %3Cg fill='%23b8892c'%3E%3Ccircle cx='150' cy='15' r='5'/%3E%3C/g%3E%3Cg fill='%23a3201b'%3E%3Ccircle cx='95' cy='15' r='3.4'/%3E%3Ccircle cx='205' cy='15' r='3.4'/%3E%3C/g%3E %3Cg fill='%231f3f8f'%3E%3Ccircle cx='40' cy='9' r='2.6'/%3E%3Ccircle cx='260' cy='21' r='2.6'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
+.contents h2 { font-family: var(--display-font); color: var(--rubric); font-size: 22pt; }
+.contents tr:not(.sub) td:first-child a { color: var(--blue); }
+.contents td.pg { color: var(--rubric); }
+.back-title { color: var(--rubric); border-bottom: none; }
+.index-body h3 { color: var(--rubric); font-family: var(--head-font); font-weight: normal; font-size: 13pt; }
+.cols { column-rule-color: var(--faint); }

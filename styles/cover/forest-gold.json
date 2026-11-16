@@ -1,0 +1,16 @@
+{
+ "title": "Forest & Gold",
+ "layout": "cloth-frame",
+ "emblem": "fleuron",
+ "description": "Dark green cloth with antique-gold frame and a four-petal fleuron.",
+ "palette": {
+  "ground": "#1f3a2b",
+  "ground2": "#182e22",
+  "title": "#cfae62",
+  "line": "#cfae62",
+  "text": "#eee7d3",
+  "muted": "#cbbf9b",
+  "accent": "#cfae62",
+  "accent2": "#cfae62"
+ }
+}
