@@ -8,7 +8,9 @@ Layouts
                Other trims use the same rules with flaps scaled, and are flagged unverified.
   paperback    bleed 0.125 | back | spine | front | bleed 0.125   (spine = pages/444 + 0.06 in)
   casewrap     0.75 in wrap | back board | spine | front board | 0.75 in wrap   (unverified)
-  coil, saddle like paperback with no spine   (coil unverified)
+  coil         bleed 0.125 | back | front | bleed 0.125, no spine; 0.5 in safety from every trim edge,
+               the coil edge included (from Lulu's Digest coil template: 11.25 × 8.75 in for 5.5 × 8.5)
+  saddle       like coil   (unverified)
 
 When a Lulu API key is configured, lulu.cover_dimensions() gives the exact sheet size for the
 product and replaces our arithmetic; any difference is reported.
@@ -54,9 +56,11 @@ def cover_geometry(trim_name, binding, page_count):
         bleed = pg.BLEED
         g.update(bleed=bleed, H=th + 2 * bleed, face_y=bleed, face_h=th, back=(bleed, tw), spine_x=bleed + tw,
                  front=(bleed + tw + S, tw), W=2 * bleed + 2 * tw + S, inset=0.5)
-        g["verified"] = binding == "paperback"
-        if binding in ("coil", "saddle"):
-            g["notes"].append(f"{binding} cover layout assumed to be a spread without a spine; verify with the Lulu API")
+        g["verified"] = binding in ("paperback", "coil")
+        if binding == "coil" and key != "digest":
+            g["notes"].append("coil layout from Lulu's Digest template (2 × trim width + 0.25 in, no spine), applied at this trim")
+        if binding == "saddle":
+            g["notes"].append("saddle-stitch cover layout assumed to be a spread without a spine; verify with the Lulu API")
     g["W"], g["H"] = round(g["W"], 4), round(g["H"], 4)
     if binding in ("paperback", "casewrap", "dust-jacket") and page_count <= 80:
         g["notes"].append("80 pages or fewer: Lulu advises no spine text, so the spine is left plain")
@@ -172,7 +176,7 @@ def layout_css(s):
 """
     if lay == "illuminated":
         return """
-.front .inner { inset: 1.15in 1.05in; }
+.front .inner { inset: 1.45in 1.3in; }
 .front svg.frame { position: absolute; left: 0; top: 0; }
 .kicker { margin-top: .55in; font-size: 13pt; letter-spacing: .06em; color: var(--accent2); font-family: var(--title-font); }
 .title { margin-top: .3in; font-family: var(--title-font); font-size: 44pt; line-height: 1.12; color: var(--title); }
@@ -182,7 +186,7 @@ def layout_css(s):
 .rule { width: 2.8in; height: 16pt; margin: .32in auto .26in; background: var(--vine) center / contain no-repeat; }
 .vol { margin-top: .3in; font-size: 20pt; color: var(--accent2); font-family: var(--title-font); }
 .range { margin-top: .12in; font-size: 14pt; font-style: italic; }
-.author { margin-top: auto; margin-bottom: .1in; font-size: 15pt; font-family: var(--title-font); color: var(--accent2); }
+.author { margin-top: auto; margin-bottom: .25in; font-size: 17pt; font-family: var(--title-font); color: var(--accent2); }
 .spine .band { width: 100%; height: .14in; background: repeating-linear-gradient(90deg, var(--accent2) 0 .12in, var(--line) .12in .16in, var(--title) .16in .28in); }
 """
     if lay == "modern":
@@ -223,7 +227,7 @@ def front_html(c, s, g):
     frame = ""
     if lay == "illuminated":
         fw, fh = g["front"][1], g["face_h"]
-        ns = SimpleNamespace(width=fw, height=fh, bleed=0, inner=0.95, outer=0.95, top=0.95, bottom=0.95,
+        ns = SimpleNamespace(width=fw, height=fh, bleed=0, inner=1.1, outer=1.1, top=1.1, bottom=1.1,
                              page_w=fw, page_h=fh)
         frame = ornaments.frame_svg("illuminated", ns, "recto", 3).replace('class="frame"',
                                                                           f'class="frame" style="width:{fw}in;height:{fh}in"')
