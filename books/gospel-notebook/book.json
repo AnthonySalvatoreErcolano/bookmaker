@@ -1,0 +1,14 @@
+{
+ "name": "gospel-notebook",
+ "title": "The Holy Gospels",
+ "subtitle": "of Our Lord Jesus Christ",
+ "subtitle2": "Douay-Rheims, with the Fathers from the Catena Aurea, and a ruled page for notes facing every page of text",
+ "trim": "letter",
+ "binding": "coil",
+ "interior": {"style": "illuminated", "margins": "large", "options": {}},
+ "bible": "manuscripts/gospels.tsv",
+ "catena": "manuscripts/catena.json",
+ "notes": {"ruling_in": 0.3125, "ruling_color": "#c9b48f", "max_excerpts": 3, "max_words": 150, "outer_margin": 0.75},
+ "source": {"bible": "github.com/CodeBlue519/drb drb.tsv (Challoner), Gospels only",
+            "catena": "sources/catena_parse.py: CCEL catena1 (Matthew, .doc), catena2 (Mark, ThML), ecatholic2000 (Luke, John) via sources/catena_ecatholic2000.py"}
+}
