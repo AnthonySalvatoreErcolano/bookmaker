@@ -17,4 +17,4 @@ in `books/<name>/manuscripts/` (not committed: regenerate with the adapter named
 6. New styles: a folder in `styles/interior/` with style.json (title, description, best_for,
    margins standard+large for US Letter, options, colour, furniture) and style.css (variables
    from styles/components.css, overrides). Then `python bookmaker.py catalog --only <name>`
-   and republish the catalog artifact.
+   and republish the catalog artifact (https://claude.ai/artifact/PLbbqJkG2vh2e8jco1DG4Z).
