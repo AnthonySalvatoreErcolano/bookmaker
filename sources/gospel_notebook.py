@@ -226,7 +226,7 @@ def ref_label(page_verses):
 
 
 # --------------------------------------------------------------------------- notes pages
-def notes_html(entries, style, geo, opts, cfg):
+def notes_html(entries, style, geo, opts, cfg, first_verso=False):
     b = geo.bleed
     outer = cfg.get("outer_margin", 0.75)
     top, bottom = geo.top + b, geo.bottom + b
@@ -241,9 +241,12 @@ def notes_html(entries, style, geo, opts, cfg):
                      f'<span class="on"> on {H.escape(x["on"])}</span>. {H.escape(x["text"])}</p>' for x in e["excerpts"])
         head = f'<div class="nh">{H.escape(e["ref"])}</div>' if e["ref"] else ""
         top_block = f'<div class="nt">{head}{ex}{"<div class=nr></div>" if ex else ""}</div>'
-        pages.append(f'<section class="np">{top_block}<div class="ruled">{rules}</div></section>')
+        side = "verso" if (len(pages) % 2 == 0) == first_verso else "recto"
+        pages.append(f'<section class="np {side}">{top_block}<div class="ruled">{rules}</div></section>')
     css = "\n".join([font_faces(), COMPONENTS(), style.css, f"""
 @page {{ size: {geo.page_w}in {geo.page_h}in; margin: {top}in {outer + b}in {bottom}in {geo.inner + b}in; }}
+@page verso {{ margin: {top}in {geo.inner + b}in {bottom}in {outer + b}in; }}
+.np.verso {{ page: verso; }}
 html, body {{ margin: 0 !important; padding: 0 !important; }}
 .np {{ height: {content_h - 0.06:.3f}in; display: flex; flex-direction: column; overflow: hidden; break-after: page; }}
 .np:last-child {{ break-after: auto; }}
@@ -379,7 +382,25 @@ def build(book_path, chapters_spec=None, out_name=None):
     if len(PdfReader(str(fpdf)).pages) != n_front:
         sys.exit("Front matter length changed when page numbers were filled in.")
 
-    # 4. interleave
+    # 4. ruled pages for general notes at the end: at least 6, and enough to make the whole book a
+    #    multiple of 4 pages (an even count, so nothing is left for the printer to fill out)
+    base = n_front + 2 * n_text
+    n_end = max(ncfg.get("end_pages_min", 6), 0)
+    while (base + n_end) % 4:
+        n_end += 1
+    epdf = it.print_to_pdf(browser, notes_html([{"ref": "Notes", "excerpts": []}] * n_end, style, geo, opts, ncfg,
+                                      first_verso=(base + 1) % 2 == 0),
+                           work, "endnotes")
+    er = PdfReader(str(epdf))
+    if len(er.pages) == n_end + 1 and not (er.pages[-1].extract_text() or "").strip():
+        t = PdfWriter(clone_from=str(epdf))
+        t.remove_page(len(t.pages) - 1)
+        with open(epdf, "wb") as fh:
+            t.write(fh)
+    if len(PdfReader(str(epdf)).pages) != n_end:
+        sys.exit("End notes pages came out the wrong length.")
+
+    # 5. interleave
     w = PdfWriter()
     fr, tr, nr = PdfReader(str(fpdf)), PdfReader(str(tpdf)), PdfReader(str(npdf))
     for pgobj in fr.pages:
@@ -387,12 +408,14 @@ def build(book_path, chapters_spec=None, out_name=None):
     for i in range(n_text):
         w.add_page(tr.pages[i])
         w.add_page(nr.pages[i])
+    for pgobj in PdfReader(str(epdf)).pages:
+        w.add_page(pgobj)
     raw = work / "assembled.pdf"
     with open(raw, "wb") as fh:
         w.write(fh)
-    total = n_front + 2 * n_text
+    total = n_front + 2 * n_text + n_end
 
-    # 5. page furniture: heads on text pages, folios on text and notes pages, frames on Gospel openings
+    # 6. page furniture: heads on text pages, folios on text and notes pages, frames on Gospel openings
     openings = {book_page(tpages[f"g-{g}"]) for g in dummy_g}
     plan = {}
     for p in range(1, total + 1):
@@ -406,7 +429,7 @@ def build(book_path, chapters_spec=None, out_name=None):
     target = out / f"{stem}-interior.pdf"
     it.stamp_furniture(browser, raw, plan, total, work, target, geo, style, opts)
     n_ex = sum(len(e["excerpts"]) for e in entries)
-    report = {"pages": total, "front": n_front, "text_pages": n_text, "excerpts": n_ex,
+    report = {"pages": total, "front": n_front, "text_pages": n_text, "end_notes_pages": n_end, "excerpts": n_ex,
               "notes_without_excerpts": sum(1 for e in entries if not e["excerpts"]),
               "trim": geo.trim, "binding": cfg.get("binding"), "inner": geo.inner, "outer": geo.outer,
               "top": geo.top, "bottom": geo.bottom, "bleed": geo.bleed, "width": geo.width, "height": geo.height,
@@ -415,7 +438,7 @@ def build(book_path, chapters_spec=None, out_name=None):
                                                encoding="utf-8")
     (out / f"{stem}-report.json").write_text(json.dumps(report, indent=1), encoding="utf-8")
     print(f"wrote {target}: {total} pages ({n_front} front, {n_text} text + {n_text} notes), "
-          f"{n_ex} excerpts, {report['notes_without_excerpts']} notes pages without one")
+          f"{n_ex} excerpts, {report['notes_without_excerpts']} notes pages without one, {n_end} ruled pages at the end")
     shutil.rmtree(work, ignore_errors=True)
     return report
 
