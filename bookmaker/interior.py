@@ -234,7 +234,7 @@ def add_initials(html):
             if el.name == "p" and not set(el.get("class") or []) & {
                     "doc-promulgation", "part-sub", "subtreatise-sub", "rub", "box-label", "canons-label",
                     "source", "source-note", "signature", "q", "a",
-                    "chapter-sub", "back-note", "ed-note", "m-meta", "m-only"} \
+                    "chapter-sub", "back-note", "ed-note", "m-meta", "m-only", "sv", "prompt", "vr", "squote"} \
                     and not el.find_parent(class_=list(BOX_KINDS | {"pair", "qa", "front", "article", "objections", "replies"})) \
                     and len(el.get_text(strip=True)) > 60:
                 p = el
@@ -243,6 +243,10 @@ def add_initials(html):
             continue
         for node in p.descendants:
             if isinstance(node, NavigableString) and node.strip():
+                if any(a.name == "sup" or set(a.get("class") or []) & {"bead", "ref", "sref", "vn", "r"}
+                       for a in node.parents if a is not p and a.name):
+                    if any(a is p for a in node.parents):
+                        continue
                 text = str(node)
                 lead = len(text) - len(text.lstrip())
                 m = re.match(r"[“\"‘'(]*\w", text[lead:])
@@ -756,6 +760,47 @@ def stamp_furniture(browser, book_pdf, plan, n_pages, workdir, target, geo, styl
         writer.write(fh)
 
 
+def pad_pages(browser, target, n, multiple, kind, geo, style, opts, work):
+    """Add pages at the end so the count is a multiple of `multiple` (and at least one page), ruled
+    for notes or blank, so the printer has no reason to add pages of its own."""
+    from pypdf import PdfReader, PdfWriter
+    extra = (-n) % multiple
+    if not extra:
+        return n
+    b = geo.bleed
+    pages = []
+    for k in range(extra):
+        side = "verso" if (n + k + 1) % 2 == 0 else "recto"
+        left = geo.outer if side == "verso" else geo.inner
+        right = geo.inner if side == "verso" else geo.outer
+        lines = ""
+        if kind == "ruled":
+            h = geo.height - geo.top - geo.bottom - 0.45
+            lines = "".join(f'<div class="rl" style="top:{0.45 + i * 0.3125:.4f}in"></div>' for i in range(int(h / 0.3125) + 1))
+            lines = f'<div class="nh">Notes</div>{lines}' if k == 0 else lines
+        pages.append(f'<div class="pp" style="padding:{geo.top + b}in {right + b}in 0 {left + b}in">'
+                     f'<div class="area" style="height:{geo.height - geo.top - geo.bottom}in">{lines}</div></div>')
+    css = font_faces() + (ROOT / "styles" / "components.css").read_text(encoding="utf-8") + style.css + f"""
+@page {{ size: {geo.page_w}in {geo.page_h}in; margin: 0; }}
+html, body {{ margin: 0; padding: 0; }}
+.pp {{ width: {geo.page_w}in; height: {geo.page_h}in; box-sizing: border-box; break-after: page; overflow: hidden; }}
+.pp:last-child {{ break-after: auto; }}
+.area {{ position: relative; }}
+.nh {{ font-family: var(--head-font); color: var(--rubric); text-align: center; font-size: 13pt; }}
+.rl {{ position: absolute; left: 0; right: 0; border-top: .45pt solid #c9c2b8; }}
+"""
+    attrs = " ".join(f'data-opt-{k}="{str(v).lower()}"' for k, v in opts.items())
+    pdf = print_to_pdf(browser, f'<!DOCTYPE html><html><head><meta charset="utf-8"><style>{css}</style></head>'
+                                f'<body class="style-{style.name}" {attrs}>{"".join(pages)}</body></html>', work, "pad")
+    w = PdfWriter(clone_from=str(target))
+    for pg_ in PdfReader(str(pdf)).pages[:extra]:
+        w.add_page(pg_)
+    with open(target, "wb") as fh:
+        w.write(fh)
+    print(f"   added {extra} {kind} page(s) at the end: {n + extra} pages, a multiple of {multiple}")
+    return n + extra
+
+
 def furniture_css(geo, style):
     f = style.get("furniture", {})
     b = geo.bleed
@@ -890,6 +935,8 @@ def build_volume_pdf(spec, src_soup, style, trim_name, binding, margins_name, op
         sys.exit(f"Final page count {got} differs from the checked layout ({n}).")
     print("   drawing running heads and page furniture…")
     stamp_furniture(browser, book, furniture_plan(html, pages, n), n, work, target, geo, style, opts)
+    if spec.get("pad_to"):
+        n = pad_pages(browser, target, n, int(spec["pad_to"]), spec.get("pad_style", "ruled"), geo, style, opts, work)
     print(f"   wrote {target} ({n} pages; contents, index and right-hand starts verified)")
     crowded = crowded_terms(terms, marks, pages)
     if crowded:

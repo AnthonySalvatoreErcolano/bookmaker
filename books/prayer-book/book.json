@@ -1,0 +1,40 @@
+{
+ "name": "prayer-book",
+ "title": "Scriptural Rosary",
+ "author": "",
+ "trim": "digest",
+ "binding": "coil",
+ "doc_start": "any",
+ "interior": {
+  "style": "red-black",
+  "margins": "standard",
+  "options": {}
+ },
+ "credit": "Scripture texts in this work are taken from the New American Bible, revised edition © 2010, 1991, 1986, 1970 Confraternity of Christian Doctrine, Inc., Washington, D.C. All Rights Reserved. For private use.",
+ "cover": {
+  "style": "vellum",
+  "kicker": "Meditations on the Mysteries",
+  "title_html": "Scriptural<br>Rosary",
+  "range": "with the Chaplet of Love, the Litany of Loreto and the Marriage Stations of the Cross",
+  "volume": "",
+  "emblem": "fleuron",
+  "back": [
+   "Pray the Rosary with the Scriptures, one passage for every bead.",
+   "For each of the twenty mysteries, one or more meditations of ten passages from Scripture, with the prayer of each bead marked after every passage. Two further mysteries, Creation and the Servant Song, are prayed through the whole Rosary, a verse for every bead.",
+   "Also the Chaplet of Love, the Litany of Loreto in English and Latin side by side, and the Stations of the Cross prayed by a bride and bridegroom preparing for marriage."
+  ],
+  "features": "Coil bound to lie open flat · {pages} pages"
+ },
+ "source": {
+  "adapter": "sources/prayerbook_gdoc.py CompletePrayerDocument.html books/prayer-book/manuscripts/prayer-book.html"
+ },
+ "volumes": [
+  {
+   "manuscript": "manuscripts/prayer-book.html",
+   "label": "with the Chaplet of Love and the Marriage Stations of the Cross",
+   "cover": {}
+  }
+ ],
+ "pad_to": 4,
+ "pad_style": "ruled"
+}

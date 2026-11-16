@@ -46,6 +46,8 @@ def volume_spec(book, vol, src_soup):
         "contents": vol.get("contents", book.get("contents", True)),
         "lang": book.get("lang", "en"),
         "glossary_note": book.get("glossary_note", ""),
+        "pad_to": vol.get("pad_to", book.get("pad_to")),
+        "pad_style": vol.get("pad_style", book.get("pad_style", "ruled")),
     }
     terms = vol.get("index_terms", book.get("index_terms"))
     gloss = vol.get("glossary", book.get("glossary"))

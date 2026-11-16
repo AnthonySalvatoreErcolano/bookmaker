@@ -292,6 +292,12 @@ def cover_html(c, s, g):
         if s.get("tint"):
             extra += f"body {{ background: radial-gradient(ellipse at 50% 45%, var(--ground) 55%, var(--ground2) 100%); }}"
     css = base_css(g, s) + layout_css(s) + extra + s.get("css", "")
+    # type sizes are set for US Letter; smaller covers scale them down (the safe-area insets stay in inches)
+    k = min(1.0, round(max(0.62, g["front"][1] / 8.75 * 1.25), 3))
+    if k < 1:
+        import re as _re
+        css = _re.sub(r"(?<![\w.])(\d+(?:\.\d+)?)pt", lambda m: f"{float(m.group(1)) * k:.2f}pt", css)
+        css += ".back p { text-align: left; } .front .inner { inset: 0.8in 0.75in; } .range { max-width: 3.3in; } .kicker { margin-top: .7in; } .back .inner { left: 0.7in; right: 0.7in; top: 0.9in; }"
     parts = ['<div class="cloth"></div>' if lay == "cloth-frame" else "",
              '<div class="spine-ground"></div>' if g["spine"] else ""]
     if "flap_back" in g:
