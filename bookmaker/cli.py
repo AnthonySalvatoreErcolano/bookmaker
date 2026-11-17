@@ -177,6 +177,34 @@ def cmd_spine(args):
     print(f"recommended inner margin (perfect/case bound): {pg.gutter_inner(args.pages):g} in")
 
 
+def cmd_verse(args):
+    from . import verses as vz
+    from .styles import interior_style
+    if args.file:
+        items = vz.parse_verses(Path(args.file).read_text(encoding="utf-8"))
+    elif args.ref and args.text:
+        items = [{"ref": args.ref, "version": args.version or "", "text": " ".join(args.text)}]
+    else:
+        sys.exit("Give --file verses.txt, or --ref \"John 3:16\" and the verse text.")
+    if args.version:
+        for v in items:
+            v["version"] = v["version"] or args.version
+    styles = args.style or ["illuminated"]
+    formats = args.format or ["square"]
+    raw = dict(o.split("=", 1) for o in (args.option or []))
+    made = []
+    for s in styles:
+        known = set(interior_style(s).get("options", {})) | set(vz.CARD_OPTIONS.get(s, {}))
+        unknown = [k for k in raw if not any(k in set(interior_style(t).get("options", {})) | set(vz.CARD_OPTIONS.get(t, {}))
+                                             for t in styles)]
+        if unknown:
+            sys.exit(f"Unknown option(s) {', '.join(unknown)} for {', '.join(styles)}.")
+        opts = {k: v for k, v in raw.items() if k in known}
+        made += vz.render_all(items, [s], formats, opts, args.outdir, args.browser)
+    for m in made:
+        print(m)
+
+
 def common(p, layout=True):
     p.add_argument("--outdir", "-o", help="where to write (default: the book's output folder)")
     p.add_argument("--browser", help="path to Chrome or Edge if it isn't found automatically")
@@ -232,6 +260,19 @@ def main(argv=None):
     p = sub.add_parser("spine", help="spine widths and gutter for a page count")
     p.add_argument("pages", type=int)
     p.set_defaults(fn=cmd_spine)
+
+    p = sub.add_parser("verse", help="set Bible verses as pictures (PNG; PDF too for print sizes)")
+    p.add_argument("text", nargs="*", help="the verse text (or use --file)")
+    p.add_argument("--ref", help='reference, e.g. "John 3:16"')
+    p.add_argument("--version", help='translation credit, e.g. "Douay-Rheims"')
+    p.add_argument("--file", "-f", help="a text file of verses (see bookmaker/verses.py)")
+    p.add_argument("--style", "-s", action="append", choices=["illuminated", "scriptorium"], help="repeatable")
+    p.add_argument("--format", action="append", help="square, portrait, story, landscape, print-5x7, print-8x10, "
+                   "print-11x14 (repeatable)")
+    p.add_argument("--option", action="append", help="style option, e.g. initial=vermilion, border=light, align=center")
+    p.add_argument("--outdir", "-o", default="verses/output")
+    p.add_argument("--browser")
+    p.set_defaults(fn=cmd_verse)
 
     p = sub.add_parser("catalog", help="render the style catalog previews")
     p.add_argument("--outdir", "-o", default="catalog")

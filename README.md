@@ -40,6 +40,23 @@ Cover (`styles/cover/<name>.json`): `oxblood-gold`, `navy-silver`, `forest-gold`
 
 `python bookmaker.py catalog` renders `catalog/`: sample pages of every style and every cover.
 
+## Verse cards
+
+`python bookmaker.py verse` sets a Bible verse (or any short passage) as a picture in the
+`illuminated` or `scriptorium` look: same fonts, initials, borders and vellum as the books.
+
+```
+python bookmaker.py verse --ref "John 3:16" --version "Douay-Rheims" "For God so loved the world..."
+python bookmaker.py verse -f verses/sample.txt -s illuminated -s scriptorium --format square --format story
+```
+
+Formats: `square` (1080²), `portrait` (1080×1350), `story` (1080×1920), `landscape` (1920×1080),
+and `print-5x7`, `print-8x10`, `print-11x14` (300 dpi PNG plus a PDF). The text is sized to fill the
+card. Options: the style's own (`text=garamond`, `script=uncial`, `tint=off`, `initial=vermilion`,
+`ground=white`…) plus `border=full|light|none` (illuminated), `border=plummet|none` (scriptorium)
+and `align=justify|center`. Verse-file format is at the top of `bookmaker/verses.py`; `[n]` in the
+text prints a verse number. Output goes to `verses/output/`.
+
 ## Bindings and Lulu
 
 Numbers from Lulu's Book Creation Guide are used as given: the paperback spine (pages/444 + 0.06 in),
