@@ -103,7 +103,8 @@ body { width: %(W)sin; height: %(H)sin; position: relative; overflow: hidden; ba
 .ref { margin: 0 0 .25em; text-align: center; text-indent: 0; line-height: 1.1; }
 .orn { text-align: center; margin: 0 0 .7em; text-indent: 0; }
 p.verse { margin: 0; text-indent: 0; hyphens: auto; text-align: var(--card-align, justify); text-align-last: left; }
-p.verse:last-of-type { text-align-last: center; }
+p.verse.has-initial:last-of-type { text-align-last: center; }   /* a single paragraph ends centred */
+.end { margin: 0; text-indent: 0; text-align: center; }
 p.verse.more { margin-top: .35em; }
 .pil { color: var(--rubric); }
 p.verse.more:nth-of-type(odd) .pil { color: var(--blue, var(--lapis-1)); }
@@ -132,8 +133,8 @@ p.verse { color: var(--ink-1); line-height: 1.5; }
 p.has-initial::first-line { font-family: var(--rubric-font); letter-spacing: .05em; }
 .vn { color: var(--lapis-1); font-family: var(--rubric-font); }
 .credit { font-family: var(--gloss-font); font-style: italic; color: var(--lapis-1); font-size: .62em; letter-spacing: .02em; }
-.credit::after { content: "✠"; display: block; font-style: normal; font-family: var(--body-font); color: var(--vermilion-1);
-                 font-size: 1.3em; margin-top: .5em; }
+.end::after { content: "✠"; display: block; font-family: var(--body-font); color: var(--vermilion-1);
+                 font-size: .6em; margin-top: .6em; }
 """
 
 # Shrink the text until it fits the block, then mark the page ready.
@@ -203,7 +204,7 @@ def card_html(verse, style_name="illuminated", fmt="square", options=None):
 <body {attrs}>{tint}{frame}
 <div class="block"><div class="fit">
 <p class="ref">{H.escape(verse['ref'])}</p><div class="orn"></div>
-{_verse_html(verse['text'])}{credit}
+{_verse_html(verse['text'])}{credit}<p class="end"></p>
 </div></div>
 {FIT_JS % {"MAX": max_pt}}
 </body></html>"""
@@ -235,6 +236,8 @@ def render(verse, style_name, fmt, options, out_dir, browser=None, name=None):
     src.write_text(card_html(verse, style_name, fmt, options), encoding="utf-8")
     uri = src.resolve().as_uri()
     png = out_dir / f"{stem}.png"
+    for old in (png, out_dir / f"{stem}.pdf"):     # never hand back a stale render
+        old.unlink(missing_ok=True)
     css_w, css_h = round(W * 96), round(Hh * 96)
     _chrome(browser, [f"--screenshot={png}", f"--window-size={css_w},{css_h}",
                       f"--force-device-scale-factor={dpi / 96}"], uri)
