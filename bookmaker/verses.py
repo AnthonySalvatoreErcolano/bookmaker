@@ -12,7 +12,7 @@ Input is either one verse on the command line or a text file of verses:
     Psalm 22:1-2
     The Lord ruleth me: and I shall want nothing. [2] He hath set me in a place of pasture.
 
-Blocks are separated by a blank line. The first line is the reference, optionally followed by
+Blocks are separated by a blank line; each further line of a block is a new paragraph (marked ¶). The first line is the reference, optionally followed by
 `| version`. `[n]` in the text becomes a verse number. A line starting with `#` is a comment.
 """
 
@@ -54,9 +54,10 @@ def parse_verses(text):
         lines = [l for l in block.strip().splitlines() if not l.lstrip().startswith("#")]
         if not lines:
             continue
-        head, body = lines[0], " ".join(l.strip() for l in lines[1:])
+        head = lines[0]
+        paras = [l.strip() for l in lines[1:] if l.strip()]
         ref, _, version = head.partition("|")
-        out.append({"ref": ref.strip(), "version": version.strip(), "text": body.strip()})
+        out.append({"ref": ref.strip(), "version": version.strip(), "text": "\n".join(paras)})
     return out
 
 
@@ -65,11 +66,19 @@ def slug(s):
 
 
 def _verse_html(text):
-    t = H.escape(text)
+    """One <p> per line; the first gets the drop cap, later ones a paragraph mark."""
+    paras = [x for x in text.split("\n") if x.strip()] or [""]
+    out = [f'<p class="verse has-initial">{_para_html(paras[0], True)}</p>']
+    out += [f'<p class="verse more"><span class="pil">¶</span> {_para_html(x, False)}</p>' for x in paras[1:]]
+    return "\n".join(out)
+
+
+def _para_html(text, initial):
+    t = H.escape(text.strip())
     t = re.sub(r"\[(\d+)\]\s*", r'<sup class="vn">\1</sup>', t)
     # the drop cap: first letter (after any opening quote) of the first word
     m = re.match(r"([“\"‘'(]*)(\w)", t)
-    if m:
+    if m and initial:
         t = f'{m.group(1)}<span class="initial">{m.group(2)}</span>{t[m.end():]}'
     return t
 
@@ -93,8 +102,12 @@ body { width: %(W)sin; height: %(H)sin; position: relative; overflow: hidden; ba
 .fit { font-size: 30pt; }
 .ref { margin: 0 0 .25em; text-align: center; text-indent: 0; line-height: 1.1; }
 .orn { text-align: center; margin: 0 0 .7em; text-indent: 0; }
-p.verse { margin: 0; text-indent: 0; hyphens: auto; text-align: var(--card-align, justify); text-align-last: center; }
-p.verse .initial { float: left; }
+p.verse { margin: 0; text-indent: 0; hyphens: auto; text-align: var(--card-align, justify); text-align-last: left; }
+p.verse:last-of-type { text-align-last: center; }
+p.verse.more { margin-top: .35em; }
+.pil { color: var(--rubric); }
+p.verse.more:nth-of-type(odd) .pil { color: var(--blue, var(--lapis-1)); }
+p.verse .initial { float: left; display: flex; align-items: center; justify-content: center; letter-spacing: 0; text-indent: 0; }
 .vn { font-size: .5em; vertical-align: super; line-height: 0; margin: 0 .15em 0 .1em; }
 .credit { margin: .9em 0 0; text-align: center; text-indent: 0; font-size: .42em; }
 body[data-card-align="center"] p.verse { --card-align: center; }
@@ -105,20 +118,20 @@ ILLUMINATED_CSS = """
 .orn { height: .55em; width: 60%; margin: 0 auto .75em;
        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30'%3E%3Cpath d='M5,15 C40,0 60,30 95,15 S150,0 150,15 S205,30 205,15 S260,0 295,15' fill='none' stroke='%237a5410' stroke-width='1.4'/%3E %3Cg fill='%23b8892c'%3E%3Ccircle cx='150' cy='15' r='5'/%3E%3C/g%3E%3Cg fill='%23a3201b'%3E%3Ccircle cx='95' cy='15' r='3.4'/%3E%3Ccircle cx='205' cy='15' r='3.4'/%3E%3C/g%3E %3Cg fill='%231f3f8f'%3E%3Ccircle cx='40' cy='9' r='2.6'/%3E%3Ccircle cx='260' cy='21' r='2.6'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
 p.verse { color: var(--ink); line-height: 1.32; }
-p.verse::first-line { font-variant: small-caps; letter-spacing: .03em; }
+p.has-initial::first-line { font-variant: small-caps; letter-spacing: .03em; }
 .vn { color: var(--rubric); font-variant: normal; }
-.credit { font-family: var(--head-font); color: var(--blue); font-size: .5em; }
+.credit { font-family: var(--head-font); color: var(--blue); font-size: .62em; }
 .credit::before, .credit::after { content: " ✠ "; color: var(--rubric); font-family: var(--body-font); font-size: .8em; }
 """
 
 SCRIPTORIUM_CSS = """
-.ref { font-family: var(--rubric-font); color: var(--vermilion-1); text-transform: uppercase; letter-spacing: .16em; font-size: .62em; }
+.ref { font-family: var(--rubric-font); color: var(--vermilion-1); text-transform: uppercase; letter-spacing: .16em; font-size: .8em; }
 .orn { font-family: var(--body-font); color: var(--vermilion-1); font-size: .7em; margin-bottom: .55em; }
 .orn::before { content: "❧"; }
 p.verse { color: var(--ink-1); line-height: 1.5; }
-p.verse::first-line { font-family: var(--rubric-font); letter-spacing: .05em; }
+p.has-initial::first-line { font-family: var(--rubric-font); letter-spacing: .05em; }
 .vn { color: var(--lapis-1); font-family: var(--rubric-font); }
-.credit { font-family: var(--gloss-font); font-style: italic; color: var(--lapis-1); font-size: .46em; letter-spacing: .02em; }
+.credit { font-family: var(--gloss-font); font-style: italic; color: var(--lapis-1); font-size: .62em; letter-spacing: .02em; }
 .credit::after { content: "✠"; display: block; font-style: normal; font-family: var(--body-font); color: var(--vermilion-1);
                  font-size: 1.3em; margin-top: .5em; }
 """
@@ -190,7 +203,7 @@ def card_html(verse, style_name="illuminated", fmt="square", options=None):
 <body {attrs}>{tint}{frame}
 <div class="block"><div class="fit">
 <p class="ref">{H.escape(verse['ref'])}</p><div class="orn"></div>
-<p class="verse has-initial">{_verse_html(verse['text'])}</p>{credit}
+{_verse_html(verse['text'])}{credit}
 </div></div>
 {FIT_JS % {"MAX": max_pt}}
 </body></html>"""
@@ -204,7 +217,12 @@ def _chrome(browser, args, uri):
     import os
     if os.name != "nt" and hasattr(os, "geteuid") and os.geteuid() == 0:
         cmd.append("--no-sandbox")
-    return subprocess.run(cmd + args + [uri], capture_output=True, text=True, timeout=180)
+    for attempt in range(2):            # headless Chrome now and then hangs on exit; one retry clears it
+        try:
+            return subprocess.run(cmd + args + [uri], capture_output=True, text=True, timeout=90)
+        except subprocess.TimeoutExpired:
+            continue
+    return None
 
 
 def render(verse, style_name, fmt, options, out_dir, browser=None, name=None):
